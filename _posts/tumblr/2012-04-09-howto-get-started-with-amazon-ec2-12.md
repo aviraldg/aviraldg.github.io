@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'HOWTO: Get started with Amazon EC2... (1/2)'
+title: 'HOWTO: Get started with Amazon EC2.'
 date: '2012-04-09T23:16:00+05:30'
 tags:
 - howto

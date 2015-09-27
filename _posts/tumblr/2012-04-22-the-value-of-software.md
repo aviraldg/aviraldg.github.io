@@ -13,17 +13,15 @@ I recently showed one of my collaborators on Quizzardous! the private alpha vers
 
 The conversation was actually like:
 
-
-  Me: Here, it’s awesome, isn’t it?
-  Him: Er, yes, this, and that and that…
-  Me: How is it?
-  Him: Just this?
-  Me: Yes.
-  Him: This took a month?
-  Me: Yes, so?
-  Him: Just this much?
-  Me: Well, there’s technical stuff, and it’s pretty complicated (followed by a detailed description)
-
+> Me: Here, it’s awesome, isn’t it?  
+> Him: Er, yes, this, and that and that…  
+> Me: How is it?  
+> Him: Just this?  
+> Me: Yes.  
+> Him: This took a month?  
+> Me: Yes, so?  
+> Him: Just this much?  
+> Me: Well, there’s technical stuff, and it’s pretty complicated (followed by a detailed description)
 
 That was the end of the conversation, but he did have a point. We, as developers and programmers — no, as artists — tend to overappreciate the value of our creations. We step back after every stroke of the brush, every line of code and every musical note to think, “This is revolutionary. This is amazing.” Yet, to Mr. John Doe on the road, it’s just a blob of paint on the canvas,  just a line of meaningless text, or just a sound. If your particular art is code, or rather software development, Mr. Doe is most likely either the person who will actually use your software, or pay for it (or both!) He couldn’t care less if you used COBOL instead of Ruby on Rails or Python in your app, as long as it works well.
 
