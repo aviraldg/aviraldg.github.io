@@ -46,7 +46,20 @@ h1, h2, h3, h4, h5, h6, .site-title {
     }
 }
 
+.essay {
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Playfair Display', serif;
+	}
 
+	h1 {
+		text-transform: uppercase;
+	}
+}
+
+.essay-info {
+	background: #333;
+	color: white;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import

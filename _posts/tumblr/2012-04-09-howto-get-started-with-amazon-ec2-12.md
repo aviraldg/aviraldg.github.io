@@ -17,15 +17,9 @@ Next, sign in to your AWS control panel and head over to the EC2 tab and create 
 
 Now, here’s the first major problem you might face - your new instance won’t accept any incoming traffic, unless you specifically tell it to do so. So, switch to the “Security Groups” tab and either create a new security group, or select the default one. Then, create a new SSH rule from the “Incoming” tab, with source set to “0.0.0.0/0” (which allows all incoming traffic.)You’ll probably want to do the same with HTTP/HTTPS etc depending upon what you want to use your instance for (in my case, I have it set up for ICMP echo request/response, which allows pings to work, HTTP and SSH)
 
-<<<<<<< be8604e3799caa8ddd28e8cd6783a7eb83d047ad
 Get your server’s public address from the instances tab (it’ll look like `ec2-???-???-???-???.ap-southeast-1.compute.amazonaws.com.`) You’re now ready to SSH into your instance:
 
 Notice that this differs slightly from instructions you might find for other distros, because the default user on Ubuntu images is ubuntu, not root.
-=======
-Get your server’s public address from the instances tab (it’ll look like ec2-???-???-???-???.ap-southeast-1.compute.amazonaws.com.) You’re now ready to SSH into your instance:
-
- Notice that this differs slightly from instructions you might find for other distros, because the default user on Ubuntu images is ubuntu, not root.
->>>>>>> Tumblr merge.
 
 That’s it, you now have SSH access. Before you start with setting up nginx or gunicorn, you might want to create a new usergroup and a new user for running your server processes under (for security reasons.) It’s quite simple, using addgroup and adduser, though if you want SSH access to that account, you’ll need to add your publickey to the ~/.ssh/authorized_keys file.
 
