@@ -61,10 +61,21 @@ h1, h2, h3, h4, h5, h6, .site-title {
 	color: white;
 }
 
+footer {
+	text-align: center;
+}
+
 .social-media-list {
-	display: none;
 	li {
 		display: inline;
+		font-size: 24px;
+		a {
+			color: gray;
+			transition: 0.4s color ease;
+		}
+		a:hover, a:active {
+			color: $brand-color;
+		}
 	}
 }
 

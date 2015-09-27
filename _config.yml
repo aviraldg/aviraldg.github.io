@@ -5,6 +5,9 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.aviraldg.com" # the base hostname & protocol for your site
 twitter_username: aviraldg
 github_username:  aviraldg
+linkedin_username: aviraldg
+facebook_username: aviraldg
+hn_username: aviraldg
 permalink: /p/:title/
 
 # Build settings
