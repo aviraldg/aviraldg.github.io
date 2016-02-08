@@ -37,11 +37,23 @@ Since you can only filter by one property, ordering that way is out of the quest
 
 Priority values are numbers associated with every Firebase object which naturally determine the order in which objects are returned from queries. Setting priorities to the id or the timestamp will fix most of your ordering issues.
 
+Avoid Nested Objects
+====================
+Firebase fetches the complete hierarchy of an object, which means if you have related objects as children, Firebase will have to fetch everything just to fetch the root and its immediate children. Use a separate object and refer to particular children by their keys instead.
+
+Forget About Arrays
+===================
+Firebase has array support, but it's half-baked and terrible for any situation where you need to change data. An array in Firebase is basically an object with integer keys. And objects that happen to satisfy that rule are automatically converted into arrays as POJOs, which will break all of your client code that deals with that object. This isn't that big an issue once you've standardized things a bit, but it's still something you'll want to be aware of.
+
 Add Indexes and Security Rules
 ==============================
 **Firebase is world readable and writable by default.** While extremely convenient for prototyping, this can also mean waking up one fine morning and finding an empty, or worse tampered Firebase. And while Firebase does a decent job of querying by default, specifying indexes can speed queries up significantly.
 
 [Check Firebase's documentation for the best discussion of these topics](https://www.firebase.com/docs/security/).
+
+Create a Worker
+===============
+This should be fairly obvious, but seriously, don't try to use Firebase for push notifications. If you want a shortcut here, try [Zapier's Firebase integration](https://zapier.com/zapbook/firebase/). Otherwise, your best option is to create a worker on a separate server connected to your Firebase to send out notifications and emails and to carry out background processing.
 
 Build in a Kill Switch
 ======================
