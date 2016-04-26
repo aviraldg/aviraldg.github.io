@@ -4,10 +4,16 @@
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
 
     // Positioning context for the mobile navigation icon
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.site-header-wrapper {
     position: relative;
+    min-height: 56px;
 }
 
 .site-title {
