@@ -25,7 +25,7 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+p, hr, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
@@ -176,4 +176,37 @@ pre {
       fill: $grey-color;
     }
   }
+}
+
+::selection {
+  color: white;
+  background: $brand-color;
+}
+
+header a {
+  &::before, &::after {
+    display: inline-block;
+    transition: 0.4s all ease;
+    opacity: 0;
+  }
+
+  &::before {
+    transform: translateX(500%);
+    content: '[ ';
+  }
+
+  &::after {
+    transform: translateX(-500%);
+    content: ' ]';
+  }
+
+  &:hover::before, &:hover::after {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 4px solid #e8e8e8;
 }
