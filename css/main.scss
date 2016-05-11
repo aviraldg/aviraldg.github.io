@@ -6,7 +6,8 @@
 
 
 // Our variables
-$base-font-family: "Source Serif Pro", Helvetica, Arial, sans-serif;
+$title-font-family: Montserrat, Helvetica, Arial, sans-serif;
+$base-font-family: "Source Serif Pro", serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -28,7 +29,7 @@ $on-palm:          600px;
 $on-laptop:        800px;
 
 h1, h2, h3, h4, h5, h6, .site-title {
-	font-family: Montserrat;
+	font-family: $title-font-family;
 }
 
 
@@ -62,6 +63,16 @@ footer {
 			color: $brand-color;
 		}
 	}
+}
+
+.read-more {
+	font-family: $title-font-family;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	padding: 4px 16px;
+	border: 2px solid $brand-color;
+	border-radius: 32px;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)

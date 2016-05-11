@@ -77,14 +77,16 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
-  transition: 0.4s color ease;
+  transition: 0.4s all ease;
 
   &:visited {
+    border-color: darken($brand-color, 15%);
     color: darken($brand-color, 15%);
   }
 
   &:hover {
     color: $text-color;
+    border-color: $text-color;
   }
 }
 

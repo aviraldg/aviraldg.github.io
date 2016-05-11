@@ -17,7 +17,8 @@ You can read my original GSoC proposal at: [Matrix.org - Plugin System](https://
 
 ---
 
-ps. I also used this blog post as an excuse to add [MathJax](https://www.mathjax.org/) support to my template:
+ps. I also used this blog post as an excuse to add [MathJax](https://www.mathjax.org/) to my template:
 
-\`[[1, 2], [3, 4]].((1), (2))\`
+\`[[cos theta, -sin theta], [sin theta, cos theta]].((x), (y))\`
 
+(because matrices and vectors)
