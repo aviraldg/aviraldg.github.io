@@ -6,7 +6,6 @@ tags:
 - vector
 - matrix.org
 - gsoc
-draft: true
 ---
 
 > Matrix is an open standard for decentralised communication, providing simple HTTP APIs and open source reference implementations for securely distributing and persisting JSON over an open federation of servers.
