@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Matrix ∙ Vector'
-date: '2016-04-28T12:00:00+05:30'
+date: '2016-05-18T21:20:00+05:30'
 tags:
 - vector
 - matrix.org
