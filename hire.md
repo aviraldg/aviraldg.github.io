@@ -15,4 +15,11 @@ If this interests you, please send an email (subject prefix: **Work**) to `me@<t
 
 Please note that I **do not work for equity**. I work on either a fixed hourly rate or a fixed total rate based on a full-project estimate.
 
-If you have a technical background and need specific help and advice, you can contact me through CodeMentor: <a href="https://www.codementor.io/aviraldg?utm_source=github&utm_medium=button&utm_term=aviraldg&utm_campaign=github"><img src="https://cdn.codementor.io/badges/contact_me_github.svg" alt="Contact me on Codementor" style="max-width:100%" /></a>
+If you have a technical background and need specific help and advice, you can contact me through CodeMentor:
+
+<style>
+.cm-badge {
+width: auto !important;
+}
+</style>
+<script data-codementor="aviraldg" data-style="badge" data-theme="dark" src="https://cdn.codementor.io/assets/badge.js"></script>
