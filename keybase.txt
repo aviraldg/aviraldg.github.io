@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/aviraldg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.aviraldg.com
+  * I am aviraldg (https://keybase.io/aviraldg) on keybase.
+  * I have a public key with fingerprint 3875 FC93 96D5 216A 2768  0341 0E18 4AB0 523D 1E9B
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101b4760904f36ac1ef1f410b6ca0a6866d147cb8a8087869d04c729a3003d342d60a",
+            "fingerprint": "3875fc9396d5216a276803410e184ab0523d1e9b",
+            "host": "keybase.io",
+            "key_id": "0e184ab0523d1e9b",
+            "kid": "0101b4760904f36ac1ef1f410b6ca0a6866d147cb8a8087869d04c729a3003d342d60a",
+            "uid": "94f5d1d20af08d3c1723ff26a90fe619",
+            "username": "aviraldg"
+        },
+        "service": {
+            "hostname": "www.aviraldg.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1474145770,
+    "expire_in": 157680000,
+    "prev": "76fdd5c8e7af11d45b8f0fb45cbc6835767c760d153f9d9d26d83ee6912d3723",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUl9IFEEcPi0zr9TAMouwmKgED5vZP7O7Zz0VSRJBQQQZXbMzs+fqdXvuradm
+PUQvighCD0USJZY9RGVIFEVhVEh/HyRSiyKSqBT7R4ZCcc1aPvXavAzzm+/75vs+
+piN3TiAzI6+osnfnxuLOjEcfzcDuVxcnmoHpsCYQbga1fGbjMcaTXqTWZiAMIILI
+VDQMDahYMiYUcQtZCoImpgQSrGPMkKJRUyc61DUdGwwqVJMMIkMoM1mRGIYEhIBl
+x6PcTbh23BOysq6pFjVkAzNVQphIGtahLGQ50hViQlWSGeKGKYjVTtJnCHMmSfIy
+2xEzcYj8sfcv/j/7rp+RMxRLZYhJkFhQZzJFmiRbloSJAS2OkeEDk9yNkwNcoEnK
+dkmMRcHhEBDTlE25X6yf5C+ioaGhbBZVRp0Dgp9wHc+hTkzcVnteIuyTvabEDJqb
+kb86EdOOM1GlIKS4m7SdOAgjgaSe7QuLSApSVE2DIcAbE7bLI7aPUP1+xfKf4Skh
+qWGLVTGV6lwjFkJMUU3dgpapqNSkWJcFQaOiPoZU2TKYwSTMdJlzbCCJySI98KPV
+xR0QxsIniQrNpB2NE6/e5eBwsDVjxdxARmZgXlam/8kCwZxFsz+v5G52epcztS2d
+U9Fyat5Y3wQ7v6rn5tjiTNyb2zdeHB+5MnX8zLfokcLR/MqNb5+N1BQPL+w7canM
+ekJ3bLjRXrJ16OWuWMrpPB0+8qMY79kf6/1ZMDDZt2zpt57pujeHvle2gAuvS+Wp
+Oa/LH3QH8Nela3vAzSJS30ja1pcPZB1/8CvQnw7d2/zq6HhXKJbKyn7/vK3g3eX8
+q8cWnDtYcSW4Hd+/1j2/8cOtWwQ8zss7m7ty+ViLsm46HZisatr7CeU0d7R3VEmT
+hWT4trs9medtOjncPDrY29r/+UVT7cj1QbrkS1dNUB5ac6dr4JpbRBdnrelev3rL
+Qw9P3WmoPrOv9GnsNw==
+=v/tl
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aviraldg
+
+==================================================================
+
