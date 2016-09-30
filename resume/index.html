@@ -1,0 +1,161 @@
+---
+---
+{% assign resume = site.data.resume %}
+
+<!doctype html>
+<html>
+    <head>
+        <title>Aviral Dasgupta</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans" rel="stylesheet">
+        <style>
+            html, body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Lora';
+                font-size: 11pt;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-family: 'Josefin Sans';
+                font-weight: 300;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            header {
+                background: black;
+                color: white;
+                padding: 24px;
+                font-family: 'Open Sans';
+                display: flex;
+                align-items: center;
+            }
+
+            a {
+                color: inherit !important;
+                text-decoration: none;
+            }
+
+            header h1, h2 {
+                margin: 0;
+            }
+
+            header h2 {
+                font-size: 12pt;
+                font-weight: 100;
+                font-family: 'Lora';
+                font-style: italic;
+                text-transform: none;
+            }
+
+            section {
+                margin: 24px;
+            }
+
+            section table {
+                width: 100%;
+            }
+
+            .tag {
+                font-family: monospace;
+                background: yellow;
+                padding: 1px;
+            }
+
+            .when {
+                color: gray;
+            }
+
+            .org {
+                font-weight: 700;
+                font-style: italic;
+                float: left;
+            }
+
+            .position {
+                float: right;
+            }
+
+            .event-table td {
+                padding: 8px;
+            }
+
+            .event-table td:nth-child(1) {
+                width: 96px;
+                text-align: right;
+            }
+
+            footer {
+                text-align: center;
+                padding: 8px;
+                color: gray;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Aviral Dasgupta</h1>
+                <h2>{{ resume.headline }}</h2>
+            </div>
+            <div style="flex: 1"></div>
+            <div style="text-align: right;">
+                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                <i class="fa fa-github" aria-hidden="true"></i>
+                @aviraldg <br />
+                <a href="tel:{{ resume.meta.phone }}"><i class="fa fa-phone" aria-hidden="true"></i> {{ resume.meta.phone }}</a>
+                &middot;
+                <a href="mailto:{{ resume.meta.email }}">{{ resume.meta.email }}</a>
+            </div>
+        </header>
+        <section>
+            <h2>Skills</h2>
+            <table>
+                {% for category in resume.skills %}
+                <tr>
+                    <td style="white-space: nowrap; width: 1px">
+                        {{ category.label }}:
+                    </td>
+                    <td> 
+                        {% for skill in category.list %}
+                        <span class="tag">{{skill}}</span>
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </section>
+        {% for section in resume.sections %}
+        <section>
+            <h2>{{ section.name }}</h2>
+            <table class="event-table">
+                {% for experience in resume[section.key] %}
+                <tr>
+                    <td class="when">{{ experience.when }}</td>
+                    <td>
+                        <div class="org">{{ experience.org }}</div>
+                        <div class="position">{{ experience.role }}</div>
+                        <div style="clear: both">
+                            <span>
+                            {{ experience.description }}
+                            </span>
+
+                            <div style="float: right; margin: 4px;">
+                                {% for keyword in experience.keywords %}
+                                <span class="tag">{{ keyword }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </section>
+        {% endfor %}
+        <footer>
+            <a href="http://www.aviraldg.com/resume">aviraldg.com/resume</a>
+        </footer>
+    </body>
+</html>
