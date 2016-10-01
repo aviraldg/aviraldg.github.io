@@ -1,4 +1,5 @@
 ---
+title: Resume
 ---
 {% assign resume = site.data.resume %}
 
@@ -7,13 +8,49 @@
     <head>
         <title>Aviral Dasgupta</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans|Inconsolata" rel="stylesheet">
         <style>
             html, body {
                 margin: 0;
                 padding: 0;
                 font-family: 'Lora';
                 font-size: 11pt;
+            }
+
+            body {
+                height: 297mm;
+                width: 210mm;
+                position: relative;
+            }
+
+            a {
+                color: #378df6;
+                text-decoration: none;
+            }
+
+            @media screen {
+                body {
+                    background: white;
+                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+                    margin: auto;
+                }
+
+                html {
+                    background: #333;
+                }
+
+                
+            }
+
+            @media print {
+                a {
+                    color: inherit !important;
+                    text-decoration: none;
+                }
+            }
+
+            * {
+                font-kerning: none !important;
             }
 
             h1, h2, h3, h4, h5, h6 {
@@ -32,11 +69,6 @@
                 align-items: center;
             }
 
-            a {
-                color: inherit !important;
-                text-decoration: none;
-            }
-
             header h1, h2 {
                 margin: 0;
             }
@@ -50,7 +82,7 @@
             }
 
             section {
-                margin: 24px;
+                margin: 20px 24px;
             }
 
             section table {
@@ -58,13 +90,20 @@
             }
 
             .tag {
-                font-family: monospace;
-                background: yellow;
+                font-family: 'Inconsolata', monospace;
+                font-size: 1.1em;
                 padding: 1px;
+            }
+            .tag:after {
+                content: ',';
+            }
+            .tag:last-child:after {
+                content: none;
             }
 
             .when {
                 color: gray;
+                vertical-align: top;
             }
 
             .org {
@@ -75,21 +114,27 @@
 
             .position {
                 float: right;
+                font-weight: 700;
             }
 
             .event-table td {
-                padding: 8px;
+                padding: 4px 8px;
             }
 
             .event-table td:nth-child(1) {
+                padding-top: 6px;
                 width: 96px;
                 text-align: right;
             }
 
             footer {
+                position: absolute;
+                bottom: 20px;
+                left: 0px;
+                width: 100%;
                 text-align: center;
-                padding: 8px;
                 color: gray;
+                background: white;
             }
         </style>
     </head>
@@ -112,6 +157,13 @@
         </header>
         <section>
             <h2>Skills</h2>
+            <!--<p>
+            {% for category in resume.skills %}
+                    {% for skill in category.list %}
+                    <span class="tag">{{skill}}</span>
+                    {% endfor %}
+            {% endfor %}
+            </p>-->
             <table>
                 {% for category in resume.skills %}
                 <tr>

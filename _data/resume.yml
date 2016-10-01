@@ -1,7 +1,7 @@
-headline: 'Software Developer & Designer'
+headline: 'Software Engineer &amp; Designer'
 meta:
-  email: example@example.com
-  phone: '+910000000000'
+  email: 'me@aviraldg.com'
+  phone: '+917077100566'
 sections:
   - name: Experience
     key: experiences
@@ -14,23 +14,26 @@ experiences:
     org: '<a href="http://matrix.org/">Matrix.org</a>'
     role: Google Summer of Code 2016 Student Developer Intern
     description: >
-      Worked on a flexible plugin system for the Vector client and a Slack Webhook API compatible application service.
+      Worked on a flexible plugin system for the Vector client,
+      a rich text editor based on Draft.js and a Slack Webhook API
+      compatible application service.
     keywords:
     - React
     - JavaScript (ES6)
     - Go
     - Node.js
   - when: "2015 &mdash; now"
-    org: Codementor
+    org: <a href="https://www.codementor.io/aviraldg">Codementor</a>
     role: Mentor
     description: >
-      Have helped many learners and developers master technologies and fix problems in their code, as a featured mentor on Codementor. 
+      As a featured mentor on Codementor, I&rsquo;ve helped many learners and
+      developers master technologies and fix problems in their code in 1-on-1
+      tutorial sessions. 
     keywords:
     - Android
     - Python
     - React
-    - JavaScript
-    - HTML
+    - JavaScript (ES6)
   - when: "2010 &mdash; now"
     org: Various Organizations
     role: Technical Consultant
@@ -46,34 +49,41 @@ experiences:
     - JavaScript
     - Web2py
 awards: 
-  - when: 2015
-    org: '<a href="http://matrix.org/">Angelhack</a>'
-    role: Angelhack Vizag Winner
+  - when: 2016
+    org: 'Indiahacks - Online Commerce Track'
+    role: Finalist
     description: >
-      Invited to exclusive ​<em>Hackcelerator</em> programme for Android testing and deployment tools, <em>Codeorb</em>.
+      Developed Kookoo IVR backed automated delivery tracking solution,
+      TrackShack at <em>HackerEarth</em>&rsquo;s Indiahacks hackathon.
+  - when: 2015
+    org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
+    role: Grand Prize Winner
+    description: >
+      Invited to exclusive ​<em>Hackcelerator</em> programme and Angelhack
+      Global Demo Day for Android testing and deployment tools, <em>Codeorb</em>.
   - when: 2013
-    org: '<a href="http://matrix.org/">Syscan Hardcode Secure Coding Contest</a>'
+    org: '<a href="https://security.googleblog.com/2013/05/the-results-are-in-hardcode-secure.html">Syscan Hardcode Secure Coding Contest</a>'
     role: '2<sup>nd</sup> at Singapore World Finals'
     description: >
       Designed & developed ​Gridlock Exchange, a security-focused ecommerce platform and
       performed successful penetration tests on competitors' apps.
   - when: '2010 &amp; 2012'
-    org: '<a href="http://matrix.org/">Google Code-in</a>'
+    org: '<a href="https://developers.googleblog.com/2013/02/google-code-in-2012-grand-prize-winners.html">Google Code-in</a>'
     role: Grand Prize Winner
     description: >
       Awarded grand prize and a trip to Google’s Mountain View HQ twice by Google for open
       source work with ​<em>Sahana Software Foundation</em> and ​<em>Tux4Kids</em>
   - when: '2011 &amp; 2012'
-    org: '<a href="http://matrix.org/">TCS IT Wiz</a>'
+    org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
     role: World Finalist
     description: >
       Placed 2<sup>nd</sup> and 3<sup>rd</sup> respectively in the international finals of this very popular technology
       quiz contest organized by <em>Tata Consultancy Services</em>.
 education:
-  - when: '2014-2018'
+  - when: '2014 &mdash; 2018'
     org: 'KIIT University, Bhubaneswar'
     role: 'Bachelor of Technology <em>in</em> Computer Science'
-  - when: '2001-2014'
+  - when: '2001 &mdash; 2014'
     org: 'Loyola School, Jamshedpur'
     role: 'ICSE &amp; ISC Pure Science <em>with</em> Computer Science'
 skills:
@@ -86,8 +96,8 @@ skills:
      - C
      - C++
      - Go
-     - Bash
-     - PHP
+    #  - Bash
+    #  - PHP
  - label: 'Platforms & Frameworks'
    list:
      - Android
@@ -95,18 +105,17 @@ skills:
      - Django
      - React
      - Angular.js
-     - Qt
  - label: Database Technologies
    list:
      - SQL
      - MongoDB
      - Redis
-     - RethinkDB
+    #  - RethinkDB
  - label: Other Tools
    list:
      - Git
      - Mercurial
      - Subversion
      - Docker
-     - Salt
-     - Selenium
+    #  - Salt
+    #  - Selenium
