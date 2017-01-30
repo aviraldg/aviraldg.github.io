@@ -8,7 +8,7 @@ title: Resume
     <head>
         <title>Aviral Dasgupta</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans|Inconsolata" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans|Fira+Mono" rel="stylesheet">
         <style>
             html, body {
                 margin: 0;
@@ -39,7 +39,7 @@ title: Resume
                     background: #333;
                 }
 
-                
+
             }
 
             @media print {
@@ -90,8 +90,7 @@ title: Resume
             }
 
             .tag {
-                font-family: 'Inconsolata', monospace;
-                font-size: 1.1em;
+                font-family: 'Fira Mono', monospace;
                 padding: 1px;
             }
             .tag:after {
@@ -128,6 +127,7 @@ title: Resume
             }
 
             footer {
+                font-size: smaller;
                 position: absolute;
                 bottom: 20px;
                 left: 0px;
@@ -135,6 +135,7 @@ title: Resume
                 text-align: center;
                 color: gray;
                 background: white;
+                font-family: 'Fira Mono', monospace;
             }
         </style>
     </head>
@@ -149,10 +150,10 @@ title: Resume
                 <i class="fa fa-stack-overflow" aria-hidden="true"></i>
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                 <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa fa-hacker-news" aria-hidden="true"></i>
                 @aviraldg <br />
-                <a href="tel:{{ resume.meta.phone }}"><i class="fa fa-phone" aria-hidden="true"></i> {{ resume.meta.phone }}</a>
-                &middot;
-                <a href="mailto:{{ resume.meta.email }}">{{ resume.meta.email }}</a>
+                <a href="tel:{{ resume.meta.phone }}"><i class="fa fa-phone-square" aria-hidden="true"></i> {{ resume.meta.phone }}</a>
+                <a href="mailto:{{ resume.meta.email }}"><i class="fa fa-envelope-square" aria-hidden="true"></i> {{ resume.meta.email }}</a>
             </div>
         </header>
         <section>
@@ -170,7 +171,7 @@ title: Resume
                     <td style="white-space: nowrap; width: 1px">
                         {{ category.label }}:
                     </td>
-                    <td> 
+                    <td>
                         {% for skill in category.list %}
                         <span class="tag">{{skill}}</span>
                         {% endfor %}
@@ -207,7 +208,7 @@ title: Resume
         </section>
         {% endfor %}
         <footer>
-            <a href="http://www.aviraldg.com/resume">aviraldg.com/resume</a>
+            Generated on {{ site.time | date_to_string }} using Jekyll. Up-to-date version: <a href="http://www.aviraldg.com/resume">aviraldg.com/resume</a>.
         </footer>
     </body>
 </html>

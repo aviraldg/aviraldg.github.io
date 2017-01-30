@@ -9,7 +9,7 @@ sections:
     key: awards
   - name: Education
     key: education
-experiences: 
+experiences:
   - when: 2016
     org: '<a href="http://matrix.org/">Matrix.org</a>'
     role: Google Summer of Code 2016 Student Developer Intern
@@ -28,7 +28,7 @@ experiences:
     description: >
       As a featured mentor on Codementor, I&rsquo;ve helped many learners and
       developers master technologies and fix problems in their code in 1-on-1
-      tutorial sessions. 
+      tutorial sessions.
     keywords:
     - Android
     - Python
@@ -48,7 +48,7 @@ experiences:
     - Angular.js
     - JavaScript
     - Web2py
-awards: 
+awards:
   - when: 2016
     org: 'Indiahacks - Online Commerce Track'
     role: Finalist
@@ -72,7 +72,7 @@ awards:
     role: Grand Prize Winner
     description: >
       Awarded grand prize and a trip to Google’s Mountain View HQ twice by Google for open
-      source work with ​<em>Sahana Software Foundation</em> and ​<em>Tux4Kids</em>
+      source work with ​<em>Sahana Software Foundation</em> and ​<em>Tux4Kids</em>.
   - when: '2011 &amp; 2012'
     org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
     role: World Finalist
