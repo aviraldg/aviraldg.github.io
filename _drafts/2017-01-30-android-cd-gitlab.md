@@ -13,7 +13,7 @@ We'll be looking at how to set up an Android project for continuous integration 
 
 `.gitlab-ci.yml` is how you tell GitLab how to build, test and deploy your project.
 
-```
+```yaml
 image: jacekmarchwicki/android
 build:
   stage: build
@@ -42,7 +42,7 @@ This should give you a JSON file containing credentials for the service account.
 
 Add `gradle-play-publisher` to your dependencies:
 
-```
+```gradle
 buildscript {
     repositories {
         mavenCentral()
@@ -57,7 +57,7 @@ buildscript {
 
 And apply it:
 
-```
+```gradle
 apply plugin: 'com.github.triplet.play'
 ```
 
