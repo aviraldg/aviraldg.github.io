@@ -36,9 +36,9 @@ test:
     - ./gradlew test --no-daemon
 ```
 
-If you push up the modified project at this point, you should see it building successfully and producing build artifacts:
+If you push up the modified project at this point, you should see it building successfully and producing job artifacts:
 
-![Successful Build with Build Artifacts](/files/android-gitlab/topeka-build.png)
+![Successful Job with Job Artifacts](/files/android-gitlab/topeka-build.png)
 
 # Publishing
 
@@ -121,6 +121,8 @@ deploy:
   stage: deploy
   script:
     - ./gradlew publishRelease --no-daemon
+  only: 
+    - master
 ```
 
 `gradle-play-publisher` is very flexible and even allows you to check in your Play Store listing and screenshots into source control. For information on how to do this, check [Triple-T/gradle-play-publisher](https://github.com/Triple-T/gradle-play-publisher).
@@ -215,6 +217,8 @@ deploy:
   stage: deploy
   script:
     - ./gradlew publishRelease --no-daemon
+  only: 
+    - master
 ```
 
 If you got stuck somewhere, you could check out the updated version of Topeka that I set up for continuous deployments at: [aviraldg/android-topeka](https://gitlab.com/aviraldg/android-topeka).
