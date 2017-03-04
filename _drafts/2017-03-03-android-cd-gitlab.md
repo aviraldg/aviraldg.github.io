@@ -9,13 +9,13 @@ tags:
 
 As software projects grow in complexity and users expect more advanced features from apps, it becomes harder to ship reliable software on schedule using the software engineering processes of the past. **Continous Deployment** (CD) is a new approach to building software that involves frequent, automated deployments based on a **Continuously Integrated** (CI) branch of code. Setting up CI allows you to develop and test features faster, while ensuring better stability for your app in production.
 
-Let's see how to set up an Android project for continuous deployment on GitLab. You should already know how to write tests for Android, and to set up CI on Gitlab. If you don't, take a look at _[Setting Up Gitlab CI for Android Projects](https://about.gitlab.com/2016/11/30/setting-up-gitlab-ci-for-android-projects/)_ to get started.
+Let's see how to set up an Android project for continuous deployment on GitLab. You should already know how to write tests for Android, and to set up CI on GitLab. If you don't, take a look at _[Setting Up GitLab CI for Android Projects](https://about.gitlab.com/2016/11/30/setting-up-gitlab-ci-for-android-projects/)_ to get started.
 
-We'll be modifying [Google's Topeka sample app](https://github.com/googlesamples/android-topeka) to automatically build, test and deploy to the Play Store, but the instructions described here should work for any project. To follow along, clone a copy of that project to Gitlab.
+We'll be modifying [Google's Topeka sample app](https://github.com/googlesamples/android-topeka) to automatically build, test and deploy to the Play Store, but the instructions described here should work for any project. To follow along, clone a copy of that project to GitLab.
 
 # Building
 
-`.gitlab-ci.yml` is how you tell GitLab how to build, test and deploy your project. If you followed the instructions from _[Setting Up Gitlab CI for Android Projects](https://about.gitlab.com/2016/11/30/setting-up-gitlab-ci-for-android-projects/)_, you probably have a list of commands that pull down the correct versions of the Android SDK and associated tools required to build your project. That approach, however, will download those dependencies each time your project is rebuilt and hence make your build slower. 
+`.gitlab-ci.yml` is how you tell GitLab how to build, test and deploy your project. If you followed the instructions from _[Setting Up GitLab CI for Android Projects](https://about.gitlab.com/2016/11/30/setting-up-gitlab-ci-for-android-projects/)_, you probably have a list of commands that pull down the correct versions of the Android SDK and associated tools required to build your project. That approach, however, will download those dependencies each time your project is rebuilt and hence make your build slower. 
 
 Instead, you can use a docker image that already has the dependencies baked in, so they don't need to be downloaded again. There is already an excellent docker image available for building Android projects available at [hub.docker.com/r/jacekmarchwicki/android](https://hub.docker.com/r/jacekmarchwicki/android/). You should pick a tag appropriate for your project, which at the time of writing should be `java7-8-r25` which has java7/8 with version 25 of the Android SDK. If your project uses a different version of the SDK/build tools, you can push up your own version of the image to Docker Hub with a modified Dockerfile and use that instead.
 
@@ -127,9 +127,9 @@ deploy:
 
 `gradle-play-publisher` is very flexible and even allows you to check in your Play Store listing and screenshots into source control. For information on how to do this, check [Triple-T/gradle-play-publisher](https://github.com/Triple-T/gradle-play-publisher).
 
-We're not done yet -- `keys.json` and our signing config and key are not checked into source control, so Gitlab has no way to use them. A great way to make them available to Gitlab is to stash them in secret variables, and export them back to files using our CI script.
+We're not done yet -- `keys.json` and our signing config and key are not checked into source control, so GitLab has no way to use them. A great way to make them available to GitLab is to stash them in secret variables, and export them back to files using our CI script.
 
-Save the contents of `sign.gradle`, `keys.json` and `signing-key.jks` as secret variables from Gitlab's CI/CD Settings:
+Save the contents of `sign.gradle`, `keys.json` and `signing-key.jks` as secret variables from GitLab's CI/CD Settings:
 
 ![GitLab Secret Variables](/files/android-gitlab/secret-vars.png)
 
@@ -188,7 +188,7 @@ Even the most comprehensive test suite cannot catch a hundred percent of all err
 - manual tracking of issue status (from the Play Developer Console to your own issue tracker)
 - limited insight into target device
 
-By setting up [Crashlytics](https://fabric.io/kits/android/crashlytics) with your Android app, you can easily track crashes, right inside GitLab. To do so, follow the instructions at [https://fabric.io/kits/android/crashlytics/install](https://fabric.io/kits/android/crashlytics/install). Once you've done this, you can configure Crashlytics to automatically create Gitlab issues when new crashes occur:
+By setting up [Crashlytics](https://fabric.io/kits/android/crashlytics) with your Android app, you can easily track crashes, right inside GitLab. To do so, follow the instructions at [https://fabric.io/kits/android/crashlytics/install](https://fabric.io/kits/android/crashlytics/install). Once you've done this, you can configure Crashlytics to automatically create GitLab issues when new crashes occur:
 
 ![GitLab integration in Crashlytics](/files/android-gitlab/fabric-gitlab.png)
 
