@@ -1,4 +1,23 @@
 headline: 'Software Engineer &amp; Designer'
+social_links:
+- icon: fa-globe
+  name: Website
+  url: http://www.aviraldg.com
+- icon: fa-stack-overflow
+  name: Stack Overflow
+  url: https://stackoverflow.com/users/152873/aviraldg
+- icon: fa-linkedin
+  name: LinkedIn
+  url: https://www.linkedin.com/in/aviraldg/
+- icon: fa-github
+  name: Github
+  url: https://github.com/aviraldg
+- icon: fa-hacker-news
+  name: Hacker News
+  url: https://news.ycombinator.com/user?id=aviraldg
+- icon: fa-twitter
+  name: Twitter
+  url: https://twitter.com/aviraldg
 meta:
   email: 'me@aviraldg.com'
   phone: '+917077100566'
@@ -10,9 +29,21 @@ sections:
   - name: Education
     key: education
 experiences:
-  - when: 2016
+  - when: Summer 2017 (ongoing)
+    org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12)</a>'
+    role: Software Engineering Intern
+    description: >
+      Responsible for end-to-end development and testing of the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as tooling for automatic generation of examples, documentation and code from predefined schema.
+    keywords:
+    - Java
+    - Python
+    - Node.js
+    - Go
+    - API
+    - Testing
+  - when: Summer 2016
     org: '<a href="http://matrix.org/">Matrix.org</a>'
-    role: Google Summer of Code 2016 Student Developer Intern
+    role: Google Summer of Code Student Developer
     description: >
       Worked on a flexible plugin system for the Vector client,
       a rich text editor based on Draft.js and a Slack Webhook API
@@ -40,7 +71,7 @@ experiences:
     description: >
       Consulted for several companies including
       <em>CrystalMD</em>, <em>WindowShopper</em>, <em>Sahana Software Foundation</em>,
-      <em>SnipClip</em>, and more. Complete portfolio on <a href="http://www.aviraldg.com">aviraldg.com</a>.
+      <em>SnipClip</em>, and more.
     keywords:
     - Android
     - Python
@@ -60,7 +91,7 @@ awards:
     role: Grand Prize Winner
     description: >
       Invited to exclusive ​<em>Hackcelerator</em> programme and Angelhack
-      Global Demo Day for Android testing and deployment tools, <em>Codeorb</em>.
+      Global Demo Day for Android testing and deployment tools startup, <em>Codeorb</em>.
   - when: 2013
     org: '<a href="https://security.googleblog.com/2013/05/the-results-are-in-hardcode-secure.html">Syscan Hardcode Secure Coding Contest</a>'
     role: '2<sup>nd</sup> at Singapore World Finals'
@@ -71,7 +102,7 @@ awards:
     org: '<a href="https://developers.googleblog.com/2013/02/google-code-in-2012-grand-prize-winners.html">Google Code-in</a>'
     role: Grand Prize Winner
     description: >
-      Awarded grand prize and a trip to Google’s Mountain View HQ twice by Google for open
+      Awarded grand prize and a trip to Google’s Mountain View HQ twice by <em>Google</em> for open
       source work with ​<em>Sahana Software Foundation</em> and ​<em>Tux4Kids</em>.
   - when: '2011 &amp; 2012'
     org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
@@ -81,10 +112,10 @@ awards:
       quiz contest organized by <em>Tata Consultancy Services</em>.
 education:
   - when: '2014 &mdash; 2018'
-    org: 'KIIT University, Bhubaneswar'
+    org: '<a href="http://kiit.ac.in/">KIIT University, Bhubaneswar</a>'
     role: 'Bachelor of Technology <em>in</em> Computer Science'
   - when: '2001 &mdash; 2014'
-    org: 'Loyola School, Jamshedpur'
+    org: '<a href="http://loyola.edu.in/">Loyola School, Jamshedpur</a>'
     role: 'ICSE &amp; ISC Pure Science <em>with</em> Computer Science'
 skills:
  - label: Programming Languages
@@ -96,8 +127,6 @@ skills:
      - C
      - C++
      - Go
-    #  - Bash
-    #  - PHP
  - label: 'Platforms & Frameworks'
    list:
      - Android
@@ -110,12 +139,9 @@ skills:
      - SQL
      - MongoDB
      - Redis
-    #  - RethinkDB
  - label: Other Tools
    list:
      - Git
      - Mercurial
      - Subversion
      - Docker
-    #  - Salt
-    #  - Selenium

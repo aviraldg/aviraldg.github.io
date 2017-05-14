@@ -6,15 +6,16 @@ title: Resume
 <!doctype html>
 <html>
     <head>
-        <title>Aviral Dasgupta</title>
+        <title>{{ page.title }}</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans|Fira+Mono" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans|Fira+Mono|Source+Sans+Pro" rel="stylesheet">
         <style>
             html, body {
                 margin: 0;
                 padding: 0;
                 font-family: 'Lora';
-                font-size: 11pt;
+                font-size: 10pt;
+                text-rendering: geometricPrecision;
             }
 
             body {
@@ -25,6 +26,8 @@ title: Resume
 
             a {
                 color: #378df6;
+                text-decoration: none;
+                color: inherit !important;
                 text-decoration: none;
             }
 
@@ -38,35 +41,35 @@ title: Resume
                 html {
                     background: #333;
                 }
-
-
-            }
-
-            @media print {
-                a {
-                    color: inherit !important;
-                    text-decoration: none;
-                }
             }
 
             * {
-                font-kerning: none !important;
+                font-kerning: normal !important;
             }
 
             h1, h2, h3, h4, h5, h6 {
-                font-family: 'Josefin Sans';
+                font-family: 'Source Sans Pro';
                 font-weight: 300;
                 text-decoration: none;
                 text-transform: uppercase;
             }
 
             header {
+                font-size: 12pt;
                 background: black;
                 color: white;
                 padding: 24px;
-                font-family: 'Open Sans';
+                font-family: 'Source Sans Pro';
                 display: flex;
                 align-items: center;
+            }
+
+            header svg {
+                margin-right: 24px;
+            }
+
+            header h1 {
+                letter-spacing: 4pt;
             }
 
             header h1, h2 {
@@ -82,8 +85,29 @@ title: Resume
             }
 
             section {
-                margin: 20px 24px;
+                margin: 10px 24px;
             }
+
+            section:first-of-type {
+                margin-top: 20px;
+            }
+
+            /*section h2 {
+                z-index: 1;
+                position: relative;
+                text-shadow: -2px 0 0 white, 2px 0 0 white, -2px 2px 0 white, 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white;
+            }
+
+            section h2::before {
+                z-index: -1;
+                content: "";
+                position: absolute;
+                bottom: 10pt;
+                left: 0;
+                height: 1pt;
+                width: 100%;
+                background: #333;
+            }*/
 
             section table {
                 width: 100%;
@@ -138,34 +162,47 @@ title: Resume
                 font-family: 'Fira Mono', monospace;
             }
         </style>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-30097779-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        {% seo %}
+        {% feed_meta %}
     </head>
     <body>
         <header>
-            <div>
-                <h1>Aviral Dasgupta</h1>
-                <h2>{{ resume.headline }}</h2>
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="65.6" height="65.6" viewBox="0 0 65.599998 65.599998"><g fill="#fff"><path d="M60.9 61.3H5.2L0 51.8l.2-.5 27.4-47h10.2l27.8 46.8-4.7 10.2zm-54.5-2h53.3l3.8-8.1L36.7 6.3h-7.9L2.2 51.8l4.2 7.5z"/><path d="M28.3 23.2L6.6 61.1l-1.7-1 23.3-40.8 13.7 22.1-1.7 1"/><path d="M29.1 4.9l22.8 38.4H24.6v-2h23.8l-21-35.4"/><path d="M64.6 50.3v2H17.7L31.4 27l1.7 1-12 22.3"/></g></svg>
+            <a href="http://www.aviraldg.com">
+                <div>
+                    <h1>Aviral Dasgupta</h1>
+                    <h2>{{ resume.headline }}</h2>
+                </div>
+            </a>
             <div style="flex: 1"></div>
             <div style="text-align: right;">
-                <i class="fa fa-stack-overflow" aria-hidden="true"></i>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                <i class="fa fa-github" aria-hidden="true"></i>
-                <i class="fa fa-hacker-news" aria-hidden="true"></i>
-                @aviraldg <br />
-                <a href="tel:{{ resume.meta.phone }}"><i class="fa fa-phone-square" aria-hidden="true"></i> {{ resume.meta.phone }}</a>
-                <a href="mailto:{{ resume.meta.email }}"><i class="fa fa-envelope-square" aria-hidden="true"></i> {{ resume.meta.email }}</a>
+                {% for link in resume.social_links %}
+                <a title="{{link.name}}" href="{{link.url}}"><i class="fa {{link.icon}}" aria-hidden="true"></i></a>
+                {% endfor %}
+                @aviraldg<br />
+                <a href="tel:{{ resume.meta.phone }}"><i class="fa fa-phone-square" aria-hidden="true"></i> {{ resume.meta.phone }}</a><br />
+                <a href="mailto:{{ resume.meta.email }}?subject=Hello Aviral!"><i class="fa fa-envelope-square" aria-hidden="true"></i> {{ resume.meta.email }}</a>
             </div>
         </header>
         <section>
             <h2>Skills</h2>
-            <!--<p>
-            {% for category in resume.skills %}
+            <p>
+                {% for category in resume.skills %}
                     {% for skill in category.list %}
-                    <span class="tag">{{skill}}</span>
+                        <span class="tag">{{skill}}</span>
                     {% endfor %}
-            {% endfor %}
-            </p>-->
-            <table>
+                {% endfor %}
+            </p>
+            <!--<table>
                 {% for category in resume.skills %}
                 <tr>
                     <td style="white-space: nowrap; width: 1px">
@@ -178,7 +215,7 @@ title: Resume
                     </td>
                 </tr>
                 {% endfor %}
-            </table>
+            </table>-->
         </section>
         {% for section in resume.sections %}
         <section>
@@ -208,7 +245,7 @@ title: Resume
         </section>
         {% endfor %}
         <footer>
-            Generated on {{ site.time | date_to_string }} using Jekyll. Up-to-date version: <a href="http://www.aviraldg.com/resume">aviraldg.com/resume</a>.
+            Rendered on {{ site.time | date_to_string }}. Up-to-date version: <a href="http://www.aviraldg.com/resume">aviraldg.com/resume</a>.
         </footer>
     </body>
 </html>

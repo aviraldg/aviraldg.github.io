@@ -14,7 +14,7 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
 
-        {% capture date_last_digit %}{{ post.date | date: "%-d" | modulo: 10 | }}{% endcapture %}
+        {% capture date_last_digit %}{{ post.date | date: "%-d" | modulo: 10 }}{% endcapture %}
         {% capture date_suffix %}{% case date_last_digit %}{% when '1' %}st{% when '2' %}nd{% when '3' %}rd{% else %}th{% endcase %}{% endcapture %}
         <span class="post-meta" style="float: right" title="{{ post.content | number_of_words}} words at 200 WPM">{{ post.content | number_of_words | append: '.0' | divided_by: 200 | round: 1 }} minutes</span>
         <span class="post-meta">{{ post.date | date: "%-d" }}<sup>{{ date_suffix }}</sup>{{ post.date | date: " %B, %Y." }}</span>

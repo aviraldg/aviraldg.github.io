@@ -1,6 +1,6 @@
 # Site settings
 title: Aviral Dasgupta
-description: Aviral Dasgupta's blog.
+description: Aviral Dasgupta's blog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.aviraldg.com" # the base hostname & protocol for your site
 twitter_username: aviraldg
@@ -9,6 +9,27 @@ linkedin_username: aviraldg
 facebook_username: aviraldg
 hn_username: aviraldg
 permalink: /p/:title/
+twitter:
+  username: aviraldg
+social:
+  links:
+    - https://twitter.com/aviraldg
+    - https://www.facebook.com/aviraldg
+    - https://www.linkedin.com/in/aviraldg
+    - https://plus.google.com/+AviralDasgupta
+    - https://github.com/aviraldg
+    - https://keybase.io/aviraldg
+    - https://stackoverflow.com/users/152873/aviraldg
+lang: en_IN
 
 # Build settings
 markdown: kramdown
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from

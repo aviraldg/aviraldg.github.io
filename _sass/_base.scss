@@ -185,28 +185,28 @@ pre {
   background: $brand-color;
 }
 
-header a {
-  &::before, &::after {
-    display: inline-block;
-    transition: 0.4s all ease;
-    opacity: 0;
-  }
+// header a {
+//   &::before, &::after {
+//     display: inline-block;
+//     transition: 0.4s all ease;
+//     opacity: 0;
+//   }
 
-  &::before {
-    transform: translateX(500%);
-    content: '[ ';
-  }
+//   &::before {
+//     transform: translateX(500%);
+//     content: '[ ';
+//   }
 
-  &::after {
-    transform: translateX(-500%);
-    content: ' ]';
-  }
+//   &::after {
+//     transform: translateX(-500%);
+//     content: ' ]';
+//   }
 
-  &:hover::before, &:hover::after {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
+//   &:hover::before, &:hover::after {
+//     opacity: 1;
+//     transform: translateX(0px);
+//   }
+// }
 
 hr {
   border: 0;
