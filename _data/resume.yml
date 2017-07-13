@@ -29,11 +29,11 @@ sections:
   - name: Education
     key: education
 experiences:
-  - when: Summer 2017 (ongoing)
+  - when: Summer 2017
     org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12)</a>'
     role: Software Engineering Intern
     description: >
-      Responsible for end-to-end development and testing of the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as tooling for automatic generation of examples, documentation and code from predefined schema.
+      Responsible for end-to-end development and testing of the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as new tooling for automatic generation of examples, documentation and code from predefined schema. Also worked on framework and components for as yet unannounced visual developer tool.
     keywords:
     - Java
     - Python
@@ -41,6 +41,9 @@ experiences:
     - Go
     - API
     - Testing
+    - AWS
+    - Flask
+    - SQLAlchemy
   - when: Summer 2016
     org: '<a href="http://matrix.org/">Matrix.org</a>'
     role: Google Summer of Code Student Developer
@@ -60,11 +63,11 @@ experiences:
       As a featured mentor on Codementor, I&rsquo;ve helped many learners and
       developers master technologies and fix problems in their code in 1-on-1
       tutorial sessions.
-    keywords:
-    - Android
-    - Python
-    - React
-    - JavaScript (ES6)
+    # keywords:
+    # - Android
+    # - Python
+    # - React
+    # - JavaScript (ES6)
   - when: "2010 &mdash; now"
     org: Various Organizations
     role: Technical Consultant
@@ -72,26 +75,31 @@ experiences:
       Consulted for several companies including
       <em>CrystalMD</em>, <em>WindowShopper</em>, <em>Sahana Software Foundation</em>,
       <em>SnipClip</em>, and more.
-    keywords:
-    - Android
-    - Python
-    - Kotlin
-    - Angular.js
-    - JavaScript
-    - Web2py
+    # keywords:
+    # - Android
+    # - Python
+    # - Kotlin
+    # - Angular.js
+    # - JavaScript
+    # - Web2py
 awards:
+  - when: 2016 & 2017
+    org: 'Mindfire Debasish Das Memorial IT Quiz'
+    role: Winner
+    description: >
+      Placed 1<sup>st</sup> and 2<sup>nd</sup> respectively in this tech quiz organized by <em>Mindfire Solutions</em>.
   - when: 2016
     org: 'Indiahacks - Online Commerce Track'
     role: Finalist
     description: >
-      Developed Kookoo IVR backed automated delivery tracking solution,
+      Developed and pitched Ozonetel/Kookoo IVR backed automated delivery tracking solution,
       TrackShack at <em>HackerEarth</em>&rsquo;s Indiahacks hackathon.
   - when: 2015
     org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
     role: Grand Prize Winner
     description: >
-      Invited to exclusive ​<em>Hackcelerator</em> programme and Angelhack
-      Global Demo Day for Android testing and deployment tools startup, <em>Codeorb</em>.
+      Invited to exclusive ​<em>Hackcelerator</em> programme and <em>Angelhack's</em>
+      Global Demo Day in San Francisco, for Android testing, user feedback and deployment tools startup, <em>Codeorb</em>.
   - when: 2013
     org: '<a href="https://security.googleblog.com/2013/05/the-results-are-in-hardcode-secure.html">Syscan Hardcode Secure Coding Contest</a>'
     role: '2<sup>nd</sup> at Singapore World Finals'
@@ -103,7 +111,7 @@ awards:
     role: Grand Prize Winner
     description: >
       Awarded grand prize and a trip to Google’s Mountain View HQ twice by <em>Google</em> for open
-      source work with ​<em>Sahana Software Foundation</em> and ​<em>Tux4Kids</em>.
+      source work with ​<em>Sahana Software Foundation</em> (Sahana Eden - Disaster Management Platform) and ​<em>Tux4Kids</em> (TuxMath - Educational Game).
   - when: '2011 &amp; 2012'
     org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
     role: World Finalist
@@ -120,8 +128,10 @@ education:
 skills:
  - label: Programming Languages
    list:
+     - HTML
+     - CSS
      - Python
-     - JavaScript (ES6)
+     - JavaScript (ES6/TypeScript)
      - Java
      - Kotlin
      - C
