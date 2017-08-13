@@ -29,9 +29,11 @@ sections:
   - name: Education
     key: education
 experiences:
-  - when: September 2017 - February 2018
+  - when: 2017 &mdash; 2018
     org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P.</a>'
-    role: Software Engineering Intern (Placement Programme)
+    role: Software Engineering Intern
+    description: >
+      Will be working as a Software Engineering Intern at Bloomberg's London office from September 2017 &mdash; February 2018.
   - when: Summer 2017
     org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12)</a>'
     role: Software Engineering Intern
