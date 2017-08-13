@@ -29,6 +29,9 @@ sections:
   - name: Education
     key: education
 experiences:
+  - when: September 2017 - February 2018
+    org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P.</a>'
+    role: Software Engineering Intern (Placement Programme)
   - when: Summer 2017
     org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12)</a>'
     role: Software Engineering Intern
@@ -56,13 +59,13 @@ experiences:
     - JavaScript (ES6)
     - Go
     - Node.js
-  - when: "2015 &mdash; now"
-    org: <a href="https://www.codementor.io/aviraldg">Codementor</a>
-    role: Mentor
-    description: >
-      As a featured mentor on Codementor, I&rsquo;ve helped many learners and
-      developers master technologies and fix problems in their code in 1-on-1
-      tutorial sessions.
+#  - when: "2015 &mdash; now"
+#    org: <a href="https://www.codementor.io/aviraldg">Codementor</a>
+#    role: Mentor
+#    description: >
+#      As a featured mentor on Codementor, I&rsquo;ve helped many learners and
+#      developers master technologies and fix problems in their code in 1-on-1
+#      tutorial sessions.
     # keywords:
     # - Android
     # - Python
