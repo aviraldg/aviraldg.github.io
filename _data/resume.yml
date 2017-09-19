@@ -29,13 +29,17 @@ sections:
   - name: Education
     key: education
 experiences:
-  - when: 2017 &mdash; 2018
-    org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P.</a>'
+  - when: Sep 17 &mdash; Feb 18
+    org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P., London</a>'
     role: Software Engineering Intern
     description: >
-      Will be working as a Software Engineering Intern at Bloomberg's London office from September 2017 &mdash; February 2018.
+      Part of the Market &amp; Community Applications group at Bloomberg, working on end-to-end implementation of collaboration-focused terminal functions like NOTE and FILE. 
+    keywords:
+    - C++
+    - Python
+    - XSD
   - when: Summer 2017
-    org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12)</a>'
+    org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12), Bangalore</a>'
     role: Software Engineering Intern
     description: >
       Responsible for end-to-end development and testing of the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as new tooling for automatic generation of examples, documentation and code from predefined schema. Also worked on framework and components for as yet unannounced visual developer tool.
@@ -93,12 +97,12 @@ awards:
     role: Winner
     description: >
       Placed 1<sup>st</sup> and 2<sup>nd</sup> respectively in this tech quiz organized by <em>Mindfire Solutions</em>.
-  - when: 2016
-    org: 'Indiahacks - Online Commerce Track'
-    role: Finalist
-    description: >
-      Developed and pitched Ozonetel/Kookoo IVR backed automated delivery tracking solution,
-      TrackShack at <em>HackerEarth</em>&rsquo;s Indiahacks hackathon.
+  # - when: 2016
+  #   org: 'Indiahacks - Online Commerce Track'
+  #   role: Finalist
+  #   description: >
+  #     Developed and pitched Ozonetel/Kookoo IVR backed automated delivery tracking solution,
+  #     TrackShack at <em>HackerEarth</em>&rsquo;s Indiahacks hackathon.
   - when: 2015
     org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
     role: Grand Prize Winner
