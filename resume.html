@@ -1,5 +1,6 @@
 ---
 title: Resume
+skills_enabled: false
 ---
 {% assign resume = site.data.resume %}
 
@@ -189,10 +190,14 @@ title: Resume
                 <a title="{{link.name}}" href="{{link.url}}"><i class="fa {{link.icon}}" aria-hidden="true"></i></a>
                 {% endfor %}
                 @aviraldg<br />
-                <a href="tel:{{ resume.meta.phone }}"><i class="fa fa-phone-square" aria-hidden="true"></i> {{ resume.meta.phone }}</a><br />
+                {% for phone in resume.meta.phone %}
+                <a href="tel:{{ phone }}"><i class="fa fa-phone-square" aria-hidden="true"></i> {{ phone }}</a>
+                <br />
+                {% endfor %}
                 <a href="mailto:{{ resume.meta.email }}?subject=Hello Aviral!"><i class="fa fa-envelope-square" aria-hidden="true"></i> {{ resume.meta.email }}</a>
             </div>
         </header>
+        {% if page.skills_enabled %}
         <section>
             <h2>Skills</h2>
             <p>
@@ -217,6 +222,7 @@ title: Resume
                 {% endfor %}
             </table>-->
         </section>
+        {% endif %}
         {% for section in resume.sections %}
         <section>
             <h2>{{ section.name }}</h2>
@@ -245,7 +251,22 @@ title: Resume
         </section>
         {% endfor %}
         <footer>
-            Rendered on {{ site.time | date_to_string }}. Up-to-date version: <a href="http://www.aviraldg.com/resume">aviraldg.com/resume</a>.
+            Rendered on {{ site.time | date_to_string }}. Up-to-date version: <a href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a>.
         </footer>
     </body>
+    <script>
+    var redirectToPDF = (function (querystring) {
+        querystring = querystring.substring(querystring.indexOf('?')+1).split('&');
+        var params = {}, pair, d = decodeURIComponent;
+        for (var i = querystring.length - 1; i >= 0; i--) {
+            pair = querystring[i].split('=');
+            params[d(pair[0])] = d(pair[1] || '');
+        }
+        return params;
+    })(window.location.href).pdf !== 'false';
+
+    if (redirectToPDF) {
+        window.location.pathname = '/files/aviral-dasgupta-resume.pdf';
+    }
+    </script>
 </html>

@@ -20,7 +20,9 @@ social_links:
   url: https://twitter.com/aviraldg
 meta:
   email: 'me@aviraldg.com'
-  phone: '+917077100566'
+  phone: 
+    - '+447519573308'
+    - '+917077100566'
 sections:
   - name: Experience
     key: experiences
@@ -33,16 +35,18 @@ experiences:
     org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P., London</a>'
     role: Software Engineering Intern
     description: >
-      Part of the Market &amp; Community Applications group at Bloomberg, working on end-to-end implementation of collaboration-focused terminal functions like NOTE and FILE. 
+      Working in the <b>NOTE</b> team, currently focused on building scalable real-time integrations
+      with other functions on the <em>Bloomberg Terminal</em>.
     keywords:
     - C++
     - Python
     - XSD
+    - Pub/sub
   - when: Summer 2017
     org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12), Bangalore</a>'
     role: Software Engineering Intern
     description: >
-      Responsible for end-to-end development and testing of the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as new tooling for automatic generation of examples, documentation and code from predefined schema. Also worked on framework and components for as yet unannounced visual developer tool.
+      Developed and tested the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as new tooling for automatic generation of examples, documentation and code from predefined schema. Also worked on framework and components for as yet unannounced visual developer tool.
     keywords:
     - Java
     - Python
@@ -54,8 +58,8 @@ experiences:
     - Flask
     - SQLAlchemy
   - when: Summer 2016
-    org: '<a href="http://matrix.org/">Matrix.org</a>'
-    role: Google Summer of Code Student Developer
+    org: 'Google Summer of Code &middot; <a href="http://matrix.org/">Matrix.org</a>'
+    role: Student Developer
     description: >
       Worked on a flexible plugin system for the Vector client,
       a rich text editor based on Draft.js and a Slack Webhook API
@@ -92,17 +96,23 @@ experiences:
     # - JavaScript
     # - Web2py
 awards:
+  - when: 2017
+    org: 'TADHack Global Hackathon'
+    role: 'London Winner & Matrix.org Prize Recipient'
+    description: >
+      Won prizes for <em>Pushtime</em>, a Chrome extension and Android app I wrote to sync clipboards,
+      phone health, OTPs, and more securely over the Matrix protocol.
   - when: 2016 & 2017
     org: 'Mindfire Debasish Das Memorial IT Quiz'
     role: Winner
     description: >
       Placed 1<sup>st</sup> and 2<sup>nd</sup> respectively in this tech quiz organized by <em>Mindfire Solutions</em>.
-  # - when: 2016
-  #   org: 'Indiahacks - Online Commerce Track'
-  #   role: Finalist
-  #   description: >
-  #     Developed and pitched Ozonetel/Kookoo IVR backed automated delivery tracking solution,
-  #     TrackShack at <em>HackerEarth</em>&rsquo;s Indiahacks hackathon.
+  - when: 2016
+    org: 'Indiahacks - Online Commerce Track'
+    role: Finalist
+    description: >
+      Developed and pitched Ozonetel IVR backed automated delivery tracking solution,
+      TrackShack at <em>HackerEarth</em>&rsquo;s Indiahacks hackathon.
   - when: 2015
     org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
     role: Grand Prize Winner
@@ -137,30 +147,30 @@ education:
 skills:
  - label: Programming Languages
    list:
+     - Python
+     - C++
+     - JavaScript (ES6/TypeScript)
+     - Kotlin
+     - Java
+     - C
      - HTML
      - CSS
-     - Python
-     - JavaScript (ES6/TypeScript)
-     - Java
-     - Kotlin
-     - C
-     - C++
-     - Go
+    #  - Go
  - label: 'Platforms & Frameworks'
    list:
      - Android
      - Node.js
      - Django
      - React
-     - Angular.js
+     - AngularJS
  - label: Database Technologies
    list:
      - SQL
-     - MongoDB
+    #  - MongoDB
      - Redis
  - label: Other Tools
    list:
      - Git
      - Mercurial
      - Subversion
-     - Docker
+    #  - Docker
