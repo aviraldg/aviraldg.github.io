@@ -21,7 +21,7 @@ social_links:
 meta:
   email: 'me@aviraldg.com'
   phone: 
-    - '+447519573308'
+    # - '+447519573308'
     - '+917077100566'
 sections:
   - name: Experience
@@ -31,19 +31,30 @@ sections:
   - name: Education
     key: education
 experiences:
+  - when: Feb 18 &mdash; now
+    org: '<a href="https://www.amazon.com">Amazon, Bengaluru</a>'
+    role: Software Engineering Intern
+    description: >
+      Currently working in the <em>Retail Business Systems - Enrichment</em> team.
+    keywords:
+    - Java
+    - AWS
   - when: Sep 17 &mdash; Feb 18
     org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P., London</a>'
     role: Software Engineering Intern
     description: >
-      Working in the <b>NOTE</b> team, currently focused on building scalable real-time integrations
-      with other functions on the <em>Bloomberg Terminal</em>.
+      As a member of the <b>NOTE</b> team, designed and built a scalable service for
+      publishing real-time note metadata to some of the most popular (by request volume)
+      functions on the <em>Bloomberg Terminal</em>. Also developed a reusable
+      UI component allowing other functions to display this data.
     keywords:
     - C++
     - Python
+    - TypeScript
     - XSD
     - Pub/sub
   - when: Summer 2017
-    org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12), Bangalore</a>'
+    org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12), Bengaluru</a>'
     role: Software Engineering Intern
     description: >
       Developed and tested the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as new tooling for automatic generation of examples, documentation and code from predefined schema. Also worked on framework and components for as yet unannounced visual developer tool.
@@ -81,13 +92,13 @@ experiences:
     # - Python
     # - React
     # - JavaScript (ES6)
-  - when: "2010 &mdash; now"
-    org: Various Organizations
-    role: Technical Consultant
-    description: >
-      Consulted for several companies including
-      <em>CrystalMD</em>, <em>WindowShopper</em>, <em>Sahana Software Foundation</em>,
-      <em>SnipClip</em>, and more.
+  # - when: "2010 &mdash; now"
+  #   org: Various Organizations
+  #   role: Technical Consultant
+  #   description: >
+  #     Consulted for several companies including
+  #     <em>CrystalMD</em>, <em>WindowShopper</em>, <em>Sahana Software Foundation</em>,
+  #     <em>SnipClip</em>, and more.
     # keywords:
     # - Android
     # - Python
