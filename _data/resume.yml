@@ -35,7 +35,8 @@ experiences:
     org: '<a href="https://www.amazon.com">Amazon, Bengaluru</a>'
     role: Software Engineering Intern
     description: >
-      Currently working in the <em>Retail Business Systems - Enrichment</em> team.
+      Currently working in the <em>Retail Business Services - Enrichment</em> team,
+      on services that perform vital automated listing content QC as a part of the New Item Setup pipeline.
     keywords:
     - Java
     - AWS
@@ -119,11 +120,10 @@ awards:
     description: >
       Placed 1<sup>st</sup> and 2<sup>nd</sup> respectively in this tech quiz organized by <em>Mindfire Solutions</em>.
   - when: 2016
-    org: 'Indiahacks - Online Commerce Track'
+    org: 'HackerEarth Indiahacks - Online Commerce Track'
     role: Finalist
     description: >
-      Developed and pitched Ozonetel IVR backed automated delivery tracking solution,
-      TrackShack at <em>HackerEarth</em>&rsquo;s Indiahacks hackathon.
+      Developed and pitched IVR backed automated delivery tracking solution, <em>TrackShack</em>.
   - when: 2015
     org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
     role: Grand Prize Winner
