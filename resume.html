@@ -10,6 +10,7 @@ skills_enabled: false
         <title>{{ page.title }}</title>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans|Fira+Mono|Source+Sans+Pro" rel="stylesheet">
+        <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
         <style>
             html, body {
                 margin: 0;
@@ -147,7 +148,7 @@ skills_enabled: false
 
             .event-table td:nth-child(1) {
                 padding-top: 6px;
-                width: 96px;
+                width: 112px;
                 text-align: right;
             }
 
@@ -248,10 +249,12 @@ skills_enabled: false
                 </tr>
                 {% endfor %}
             </table>
+            <div style="text-align: center; font-size: smaller; font-style: italic;">{{ section.postscript }}</div>
         </section>
         {% endfor %}
         <footer>
-            Rendered on {{ site.time | date_to_string }}. Up-to-date version: <a href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a>.
+            <!-- Rendered on {{ site.time | date_to_string }}. Up-to-date version:  -->
+            <a href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a>
         </footer>
     </body>
     <script>

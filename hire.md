@@ -11,9 +11,11 @@ I am currently available for all kinds of consulting projects with a special foc
 - JavaScript (AngularJS, React, etc.)
 - Node.js
 
-If this interests you, please send an email (subject prefix: **Work**) to `me@<this domain>.com` with functional specifications, references and a background on what has already been implemented (if applicable.) If you aren't at this stage yet, I can help you convert your idea into wireframes and feature specifications.
-
-Please note that I **do not work for equity**. I work on either a fixed hourly rate or a fixed total rate based on a full-project estimate.
+If this interests you, please send an email (subject prefix: **Work**) to `me at
+aviraldg dot com` with functional specifications, references and a background on
+what has already been implemented (if applicable.) If you aren't at this stage
+yet, I can help you convert your idea into wireframes and feature
+specifications.
 
 If you have a technical background and need specific help and advice, you can contact me through CodeMentor:
 

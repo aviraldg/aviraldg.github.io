@@ -20,32 +20,37 @@ social_links:
   url: https://twitter.com/aviraldg
 meta:
   email: 'me@aviraldg.com'
-  phone: 
+  phone:
     # - '+447519573308'
     - '+917077100566'
 sections:
   - name: Experience
     key: experiences
+    postscript: >
+      In addition to the mentioned experience, I have also been working on personal
+      projects and freelancing since 2008.
   - name: 'Awards &amp; Achievements'
     key: awards
   - name: Education
     key: education
 experiences:
   - when: Feb 18 &mdash; now
-    org: '<a href="https://www.amazon.com">Amazon, Bengaluru</a>'
+    org: '<a href="https://www.amazon.com">Amazon</a>'
     role: Software Engineering Intern
     description: >
-      Currently working in the <em>Retail Business Services - Enrichment</em> team,
-      on services that perform vital automated listing content QC as a part of the New Item Setup pipeline.
+      Currently working in the <em>Retail Business Systems - Enrichment</em> team,
+      on services that perform automated catalog content QC as a part of the New Item Setup pipeline.
     keywords:
     - Java
+    - Python
+    - NLP
     - AWS
   - when: Sep 17 &mdash; Feb 18
-    org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P., London</a>'
+    org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P.</a>'
     role: Software Engineering Intern
     description: >
-      As a member of the <b>NOTE</b> team, designed and built a scalable service for
-      publishing real-time note metadata to some of the most popular (by request volume)
+      As a member of the <em>Collaboration - Notes</em> team, designed and built a scalable service for
+      publishing real-time note metadata to some of the most popular
       functions on the <em>Bloomberg Terminal</em>. Also developed a reusable
       UI component allowing other functions to display this data.
     keywords:
@@ -53,9 +58,8 @@ experiences:
     - Python
     - TypeScript
     - XSD
-    - Pub/sub
-  - when: Summer 2017
-    org: '<a href="https://www.plivo.com/">Plivo, Inc. (YC S12), Bengaluru</a>'
+  - when: May 17 &mdash; Jul 17
+    org: '<a href="https://www.plivo.com/">Plivo (YC S12)</a>'
     role: Software Engineering Intern
     description: >
       Developed and tested the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as new tooling for automatic generation of examples, documentation and code from predefined schema. Also worked on framework and components for as yet unannounced visual developer tool.
@@ -64,17 +68,15 @@ experiences:
     - Python
     - Node.js
     - Go
-    - API
-    - Testing
     - AWS
     - Flask
     - SQLAlchemy
-  - when: Summer 2016
+  - when: Mar 16 &mdash; Aug 16
     org: 'Google Summer of Code &middot; <a href="http://matrix.org/">Matrix.org</a>'
     role: Student Developer
     description: >
-      Worked on a flexible plugin system for the Vector client,
-      a rich text editor based on Draft.js and a Slack Webhook API
+      Worked on a flexible plugin system for the <em>Vector</em> client,
+      a rich text editor based on Draft.js, and a Slack Webhook API
       compatible application service.
     keywords:
     - React
@@ -114,7 +116,7 @@ awards:
     description: >
       Won prizes for <em>Pushtime</em>, a Chrome extension and Android app I wrote to sync clipboards,
       phone health, OTPs, and more securely over the Matrix protocol.
-  - when: 2016 & 2017
+  - when: 2016, 2017
     org: 'Mindfire Debasish Das Memorial IT Quiz'
     role: Winner
     description: >
@@ -136,21 +138,21 @@ awards:
     description: >
       Designed & developed ​Gridlock Exchange, a security-focused ecommerce platform and
       performed successful penetration tests on competitors' apps.
-  - when: '2010 &amp; 2012'
+  - when: '2010, 2012'
     org: '<a href="https://developers.googleblog.com/2013/02/google-code-in-2012-grand-prize-winners.html">Google Code-in</a>'
     role: Grand Prize Winner
     description: >
       Awarded grand prize and a trip to Google’s Mountain View HQ twice by <em>Google</em> for open
       source work with ​<em>Sahana Software Foundation</em> (Sahana Eden - Disaster Management Platform) and ​<em>Tux4Kids</em> (TuxMath - Educational Game).
-  - when: '2011 &amp; 2012'
-    org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
-    role: World Finalist
-    description: >
-      Placed 2<sup>nd</sup> and 3<sup>rd</sup> respectively in the international finals of this very popular technology
-      quiz contest organized by <em>Tata Consultancy Services</em>.
+  # - when: '2011 &amp; 2012'
+  #   org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
+  #   role: World Finalist
+  #   description: >
+  #     Placed 2<sup>nd</sup> and 3<sup>rd</sup> respectively in the international finals of this very popular technology
+  #     quiz contest organized by <em>Tata Consultancy Services</em>.
 education:
   - when: '2014 &mdash; 2018'
-    org: '<a href="http://kiit.ac.in/">KIIT University, Bhubaneswar</a>'
+    org: '<a href="http://kiit.ac.in/">KIIT University, Bhubaneswar (8.4/10)</a>'
     role: 'Bachelor of Technology <em>in</em> Computer Science'
   - when: '2001 &mdash; 2014'
     org: '<a href="http://loyola.edu.in/">Loyola School, Jamshedpur</a>'
