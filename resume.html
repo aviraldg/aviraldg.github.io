@@ -16,12 +16,12 @@ skills_enabled: false
                 margin: 0;
                 padding: 0;
                 font-family: 'Lora';
-                font-size: 10pt;
+                font-size: 9pt;
                 text-rendering: geometricPrecision;
             }
 
             body {
-                height: 297mm;
+                /*height: 297mm;*/
                 width: 210mm;
                 position: relative;
             }
@@ -42,6 +42,17 @@ skills_enabled: false
 
                 html {
                     background: #333;
+                }
+            }
+
+            @media print {
+                @page :first {
+                    margin: 0;
+                }
+
+                @page {
+                    margin: 2cm 0 2cm 0;
+                    size: A4;
                 }
             }
 
@@ -142,26 +153,35 @@ skills_enabled: false
                 font-weight: 700;
             }
 
+            .event-table tr {
+                page-break-inside: avoid;
+            }
+
             .event-table td {
                 padding: 4px 8px;
             }
 
             .event-table td:nth-child(1) {
-                padding-top: 6px;
-                width: 112px;
+                padding-top: 4px;
+                width: 96px;
                 text-align: right;
             }
 
             footer {
                 font-size: smaller;
-                position: absolute;
+                /* position: absolute;
                 bottom: 20px;
                 left: 0px;
-                width: 100%;
+                width: 100%; */
+                margin: 12px;
                 text-align: center;
                 color: gray;
                 background: white;
                 font-family: 'Fira Mono', monospace;
+            }
+            ul, ol {
+                margin-top: 4px;
+                margin-bottom: 4px;
             }
         </style>
         <script>
@@ -196,6 +216,8 @@ skills_enabled: false
                 <br />
                 {% endfor %}
                 <a href="mailto:{{ resume.meta.email }}?subject=Hello Aviral!"><i class="fa fa-envelope-square" aria-hidden="true"></i> {{ resume.meta.email }}</a>
+                <br />
+                <i class="fa fa-file-text" aria-hidden="true"></i> <a href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a>
             </div>
         </header>
         {% if page.skills_enabled %}
@@ -232,11 +254,12 @@ skills_enabled: false
                 <tr>
                     <td class="when">{{ experience.when }}</td>
                     <td>
-                        <div class="org">{{ experience.org }}</div>
+                        <div class="org">{{ experience.org }} {% if experience.team %}(<em>{{ experience.team }}</em>){% endif %}</div>
                         <div class="position">{{ experience.role }}</div>
                         <div style="clear: both">
                             <span>
-                            {{ experience.description | smartify }}
+                            {{ experience.description | smartify | markdownify |
+                            remove: '<p>' | remove: '</p>' }}
                             </span>
 
                             <div style="float: right; margin: 4px;">
@@ -249,12 +272,12 @@ skills_enabled: false
                 </tr>
                 {% endfor %}
             </table>
-            <div style="text-align: center; font-size: smaller; font-style: italic;">{{ section.postscript }}</div>
+            <!-- <div style="text-align: center; font-size: smaller; font-style: italic;">{{ section.postscript }}</div> -->
         </section>
         {% endfor %}
         <footer>
-            <!-- Rendered on {{ site.time | date_to_string }}. Up-to-date version:  -->
-            <a href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a>
+            <!-- Rendered on {{ site.time | date_to_string }}. Up-to-date version: -->
+            <!-- <a href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a> -->
         </footer>
     </body>
     <script>
