@@ -28,7 +28,7 @@ sections:
     key: experiences
     postscript: >
       In addition to the mentioned experience, I have also been working on personal
-      projects and freelancing since 2008.
+      projects and freelancing since around 2008.
   - name: 'Awards &amp; Achievements'
     key: awards
   - name: Education
@@ -38,31 +38,54 @@ experiences:
     org: '<a href="https://www.amazon.com">Amazon</a>'
     role: Software Engineering Intern
     description: >
-      Currently working in the <em>Retail Business Systems - Enrichment</em> team,
-      on services that perform automated catalog content QC as a part of the New Item Setup pipeline.
+      Working in the <em>Retail Business Systems - Auto Correction &amp;
+      Enrichment</em> team, on services that perform automated catalog content
+      validation and correction before a new item is displayed on *Amazon.com*.
+
+      - Automated a lengthy and error-prone manual onboarding process, freeing up
+        about one developer's worth of time per sprint for other issues.
+      - Analysed legacy codebase to find and fix system-wide issues involving
+        distributed data races and consistency issues, leading to increased
+        system stability and reliability.
+      - Set up and customised system for error detection and reporting by
+        replaying production traffic on shadow deployment.
     keywords:
     - Java
-    - Python
-    - NLP
+    - Spring
+    - Hibernate
+    - JUnit
+    - Mockito
     - AWS
   - when: Sep 17 &mdash; Feb 18
     org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P.</a>'
     role: Software Engineering Intern
     description: >
-      As a member of the <em>Collaboration - Notes</em> team, designed and built a scalable service for
-      publishing real-time note metadata to some of the most popular
-      functions on the <em>Bloomberg Terminal</em>. Also developed a reusable
-      UI component allowing other functions to display this data.
+      As a member of the *Collaboration - Notes* team, designed and built
+      a scalable service for publishing real-time note metadata to some of the
+      most popular functions on the *Bloomberg Terminal*. Also developed
+      a reusable UI component allowing other functions to display this data.
+
+      - Improved key workflows of *Notes* clients, leading to increased user
+        productivity.
+      - Simplified integration process, resulting in added integration points in
+        other functions and increased user acquisition for *Notes*.
     keywords:
     - C++
     - Python
     - TypeScript
-    - XSD
+    - GTest
   - when: May 17 &mdash; Jul 17
     org: '<a href="https://www.plivo.com/">Plivo (YC S12)</a>'
     role: Software Engineering Intern
     description: >
-      Developed and tested the next version of <em>Plivo's</em> Node.js, Java, Python and Go SDKs, as well as new tooling for automatic generation of examples, documentation and code from predefined schema. Also worked on framework and components for as yet unannounced visual developer tool.
+      Developed and tested the next version of <em>Plivo's</em> Node.js, Java,
+      Python and Go SDKs, as well as new tooling for automatic generation of
+      examples, documentation and code from predefined schema. Also worked on
+      framework and components for as yet unannounced visual developer tool.
+
+      - Significantly improved developer productivity leading to a better
+        onboarding experience for clients
+      - Addressed longstanding customer complaints about existing SDKs
     keywords:
     - Java
     - Python
@@ -75,9 +98,14 @@ experiences:
     org: 'Google Summer of Code &middot; <a href="http://matrix.org/">Matrix.org</a>'
     role: Student Developer
     description: >
-      Worked on a flexible plugin system for the <em>Vector</em> client,
-      a rich text editor based on Draft.js, and a Slack Webhook API
-      compatible application service.
+      Worked on enhancements for the *Riot* IM client, including a new rich
+      text editor based on Draft.js, a flexible and extensible autocomplete
+      system, as well as a Slack Webhook API compatible Application Service.
+
+      - Enabled several productivity usecases through the Slack Webhook
+        compatible AS, like Prometheus and Gitlab integrations.
+      - Usability enhancements for an improved user experience, and higher user
+        retention.
     keywords:
     - React
     - JavaScript (ES6)
@@ -114,18 +142,18 @@ awards:
     org: 'TADHack Global Hackathon'
     role: 'London Winner & Matrix.org Prize Recipient'
     description: >
-      Won prizes for <em>Pushtime</em>, a Chrome extension and Android app I wrote to sync clipboards,
+      Won prizes for *Pushtime*, a Chrome extension and Android app I wrote to sync clipboards,
       phone health, OTPs, and more securely over the Matrix protocol.
-  - when: 2016, 2017
-    org: 'Mindfire Debasish Das Memorial IT Quiz'
-    role: Winner
-    description: >
-      Placed 1<sup>st</sup> and 2<sup>nd</sup> respectively in this tech quiz organized by <em>Mindfire Solutions</em>.
-  - when: 2016
-    org: 'HackerEarth Indiahacks - Online Commerce Track'
-    role: Finalist
-    description: >
-      Developed and pitched IVR backed automated delivery tracking solution, <em>TrackShack</em>.
+  # - when: 2016, 2017
+  #   org: 'Mindfire Debasish Das Memorial IT Quiz'
+  #   role: Winner
+  #   description: >
+  #     Placed 1<sup>st</sup> and 2<sup>nd</sup> respectively in this tech quiz organized by <em>Mindfire Solutions</em>.
+  # - when: 2016
+  #   org: 'HackerEarth Indiahacks - Online Commerce Track'
+  #   role: Finalist
+  #   description: >
+  #     Developed and pitched IVR backed automated delivery tracking solution, <em>TrackShack</em>.
   - when: 2015
     org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
     role: Grand Prize Winner
@@ -136,13 +164,13 @@ awards:
     org: '<a href="https://security.googleblog.com/2013/05/the-results-are-in-hardcode-secure.html">Syscan Hardcode Secure Coding Contest</a>'
     role: '2<sup>nd</sup> at Singapore World Finals'
     description: >
-      Designed & developed ​Gridlock Exchange, a security-focused ecommerce platform and
+      Designed & developed ​*Gridlock Exchange*, a security-focused e-commerce platform, and
       performed successful penetration tests on competitors' apps.
   - when: '2010, 2012'
     org: '<a href="https://developers.googleblog.com/2013/02/google-code-in-2012-grand-prize-winners.html">Google Code-in</a>'
     role: Grand Prize Winner
     description: >
-      Awarded grand prize and a trip to Google’s Mountain View HQ twice by <em>Google</em> for open
+      Awarded grand prize twice by <em>Google</em> for open
       source work with ​<em>Sahana Software Foundation</em> (Sahana Eden - Disaster Management Platform) and ​<em>Tux4Kids</em> (TuxMath - Educational Game).
   # - when: '2011 &amp; 2012'
   #   org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
