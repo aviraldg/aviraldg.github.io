@@ -6,95 +6,118 @@ skills_enabled: false
 
 <!doctype html>
 <html>
-    <head>
-        <title>{{ page.title }}</title>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans|Fira+Mono|Source+Sans+Pro" rel="stylesheet">
-        <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-        <style>
-            html, body {
-                margin: 0;
-                padding: 0;
-                font-family: 'Lora';
-                font-size: 10pt;
-                text-rendering: geometricPrecision;
-            }
 
+<head>
+    <title>{{ page.title }}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Lora:400,400i,700,700i|Open+Sans|Fira+Mono|Source+Sans+Pro"
+        rel="stylesheet">
+    <script type="text/javascript" async
+        src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lora';
+            font-size: 9pt;
+            text-rendering: geometricPrecision;
+        }
+
+        body {
+            /*height: 297mm;*/
+            width: 210mm;
+            position: relative;
+        }
+
+        a {
+            color: #378df6;
+            text-decoration: none;
+            color: inherit !important;
+            text-decoration: none;
+        }
+
+        @media screen {
             body {
-                height: 297mm;
-                width: 210mm;
-                position: relative;
+                background: white;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+                margin: auto;
             }
 
-            a {
-                color: #378df6;
-                text-decoration: none;
-                color: inherit !important;
-                text-decoration: none;
+            html {
+                background: #333;
             }
+        }
 
-            @media screen {
-                body {
-                    background: white;
-                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-                    margin: auto;
-                }
-
-                html {
-                    background: #333;
-                }
-            }
-
-            * {
-                font-kerning: normal !important;
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                font-family: 'Source Sans Pro';
-                font-weight: 300;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            header {
-                font-size: 12pt;
-                background: black;
-                color: white;
-                padding: 24px;
-                font-family: 'Source Sans Pro';
-                display: flex;
-                align-items: center;
-            }
-
-            header svg {
-                margin-right: 24px;
-            }
-
-            header h1 {
-                letter-spacing: 4pt;
-            }
-
-            header h1, h2 {
+        @media print {
+            @page :first {
                 margin: 0;
             }
 
-            header h2 {
-                font-size: 12pt;
-                font-weight: 100;
-                font-family: 'Lora';
-                font-style: italic;
-                text-transform: none;
+            @page {
+                margin: 2cm 0 2cm 0;
+                size: A4;
             }
+        }
 
-            section {
-                margin: 10px 24px;
-            }
+        * {
+            font-kerning: normal !important;
+        }
 
-            section:first-of-type {
-                margin-top: 20px;
-            }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Source Sans Pro';
+            font-weight: 300;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
 
-            /*section h2 {
+        header {
+            font-size: 12pt;
+            background: black;
+            color: white;
+            padding: 24px;
+            font-family: 'Source Sans Pro';
+            display: flex;
+            align-items: center;
+        }
+
+        header svg {
+            margin-right: 24px;
+        }
+
+        header h1 {
+            letter-spacing: 4pt;
+        }
+
+        header h1,
+        h2 {
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 12pt;
+            font-weight: 100;
+            font-family: 'Lora';
+            font-style: italic;
+            text-transform: none;
+        }
+
+        section {
+            margin: 0px 24px;
+        }
+
+        section:first-of-type {
+            margin-top: 20px;
+        }
+
+        /*section h2 {
                 z-index: 1;
                 position: relative;
                 text-shadow: -2px 0 0 white, 2px 0 0 white, -2px 2px 0 white, 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white;
@@ -111,104 +134,127 @@ skills_enabled: false
                 background: #333;
             }*/
 
-            section table {
-                width: 100%;
-            }
+        section table {
+            width: 100%;
+        }
 
-            .tag {
-                font-family: 'Fira Mono', monospace;
-                padding: 1px;
-            }
-            .tag:after {
-                content: ',';
-            }
-            .tag:last-child:after {
-                content: none;
-            }
+        .tag {
+            font-family: 'Source Sans Pro';
+            padding: 2px 4px;
+            background: #ddd;
+            border-radius: 2px;
+        }
 
-            .when {
-                color: gray;
-                vertical-align: top;
-            }
+        .when {
+            color: gray;
+            vertical-align: top;
+        }
 
-            .org {
-                font-weight: 700;
-                font-style: italic;
-                float: left;
-            }
+        .org {
+            font-weight: 700;
+            font-style: italic;
+            float: left;
+        }
 
-            .position {
-                float: right;
-                font-weight: 700;
-            }
+        .position {
+            float: right;
+            font-weight: 700;
+        }
 
-            .event-table td {
-                padding: 4px 8px;
-            }
+        .event-table tr {
+            page-break-inside: avoid;
+        }
 
-            .event-table td:nth-child(1) {
-                padding-top: 6px;
-                width: 112px;
-                text-align: right;
-            }
+        .event-table td {
+            padding: 4px 8px;
+        }
 
-            footer {
-                font-size: smaller;
-                position: absolute;
+        .event-table td:nth-child(1) {
+            padding-top: 4px;
+            width: 96px;
+        }
+
+        footer {
+            font-size: smaller;
+            /* position: absolute;
                 bottom: 20px;
                 left: 0px;
-                width: 100%;
-                text-align: center;
-                color: gray;
-                background: white;
-                font-family: 'Fira Mono', monospace;
-            }
-        </style>
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+                width: 100%; */
+            margin: 12px;
+            text-align: center;
+            color: gray;
+            background: white;
+            font-family: 'Fira Mono', monospace;
+        }
+
+        ul,
+        ol {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
+    </style>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-30097779-1', 'auto');
         ga('send', 'pageview');
-        </script>
-        {% seo %}
-        {% feed_meta %}
-    </head>
-    <body>
-        <header>
-            <svg xmlns="http://www.w3.org/2000/svg" width="65.6" height="65.6" viewBox="0 0 65.599998 65.599998"><g fill="#fff"><path d="M60.9 61.3H5.2L0 51.8l.2-.5 27.4-47h10.2l27.8 46.8-4.7 10.2zm-54.5-2h53.3l3.8-8.1L36.7 6.3h-7.9L2.2 51.8l4.2 7.5z"/><path d="M28.3 23.2L6.6 61.1l-1.7-1 23.3-40.8 13.7 22.1-1.7 1"/><path d="M29.1 4.9l22.8 38.4H24.6v-2h23.8l-21-35.4"/><path d="M64.6 50.3v2H17.7L31.4 27l1.7 1-12 22.3"/></g></svg>
-            <a href="http://www.aviraldg.com">
-                <div>
-                    <h1>Aviral Dasgupta</h1>
-                    <h2>{{ resume.headline }}</h2>
-                </div>
-            </a>
-            <div style="flex: 1"></div>
-            <div style="text-align: right;">
-                {% for link in resume.social_links %}
-                <a title="{{link.name}}" href="{{link.url}}"><i class="fa {{link.icon}}" aria-hidden="true"></i></a>
-                {% endfor %}
-                @aviraldg<br />
-                {% for phone in resume.meta.phone %}
-                <a href="tel:{{ phone }}"><i class="fa fa-phone-square" aria-hidden="true"></i> {{ phone }}</a>
-                <br />
-                {% endfor %}
-                <a href="mailto:{{ resume.meta.email }}?subject=Hello Aviral!"><i class="fa fa-envelope-square" aria-hidden="true"></i> {{ resume.meta.email }}</a>
+    </script>
+    {% seo %}
+    {% feed_meta %}
+</head>
+
+<body>
+    <header>
+        <svg title="This is a Penrose Triangle. A line traced around it would be endless, and that's what my name means. It also looks like an A, my first initial."
+            xmlns="http://www.w3.org/2000/svg" width="65.6" height="65.6" viewBox="0 0 65.599998 65.599998">
+            <g fill="#fff">
+                <path
+                    d="M60.9 61.3H5.2L0 51.8l.2-.5 27.4-47h10.2l27.8 46.8-4.7 10.2zm-54.5-2h53.3l3.8-8.1L36.7 6.3h-7.9L2.2 51.8l4.2 7.5z" />
+                <path d="M28.3 23.2L6.6 61.1l-1.7-1 23.3-40.8 13.7 22.1-1.7 1" />
+                <path d="M29.1 4.9l22.8 38.4H24.6v-2h23.8l-21-35.4" />
+                <path d="M64.6 50.3v2H17.7L31.4 27l1.7 1-12 22.3" />
+            </g>
+        </svg>
+        <a href="http://www.aviraldg.com">
+            <div>
+                <h1>Aviral Dasgupta</h1>
+                <h2 style="display: inline; margin-right: 8px">{{ resume.headline }}</h2>
+                <small><i class="fa fa-map-marker" aria-hidden="true"></i> {{ resume.location }}</small>
             </div>
-        </header>
-        {% if page.skills_enabled %}
-        <section>
-            <h2>Skills</h2>
-            <p>
-                {% for category in resume.skills %}
-                    {% for skill in category.list %}
-                        <span class="tag">{{skill}}</span>
-                    {% endfor %}
-                {% endfor %}
-            </p>
-            <!--<table>
+        </a>
+        <div style="flex: 1"></div>
+        <div style="text-align: right;">
+            {% for link in resume.social_links %}
+            <a title="{{link.name}}" href="{{link.url}}"><i class="fa {{link.icon}}" aria-hidden="true"></i></a>
+            {% endfor %}
+            @aviraldg<br />
+            {% for phone in resume.meta.phone %}
+            <a href="tel:{{ phone }}"><i class="fa fa-phone-square" aria-hidden="true"></i> {{ phone }}</a>
+            <br />
+            {% endfor %}
+            <a href="mailto:{{ resume.meta.email }}?subject=Hello Aviral!"><i class="fa fa-envelope-square"
+                    aria-hidden="true"></i> {{ resume.meta.email }}</a>
+            <br />
+            <i class="fa fa-file-text" aria-hidden="true"></i> <a
+                href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a>
+        </div>
+    </header>
+    {% if page.skills_enabled %}
+    <section>
+        <h2>Skills</h2>
+        <p>
+            {% for category in resume.skills %}
+            {% for skill in category.list %}
+            <span class="tag">{{skill}}</span>
+            {% endfor %}
+            {% endfor %}
+        </p>
+        <!--<table>
                 {% for category in resume.skills %}
                 <tr>
                     <td style="white-space: nowrap; width: 1px">
@@ -222,44 +268,46 @@ skills_enabled: false
                 </tr>
                 {% endfor %}
             </table>-->
-        </section>
-        {% endif %}
-        {% for section in resume.sections %}
-        <section>
-            <h2>{{ section.name }}</h2>
-            <table class="event-table">
-                {% for experience in resume[section.key] %}
-                <tr>
-                    <td class="when">{{ experience.when }}</td>
-                    <td>
-                        <div class="org">{{ experience.org }}</div>
-                        <div class="position">{{ experience.role }}</div>
-                        <div style="clear: both">
-                            <span>
-                            {{ experience.description | smartify }}
-                            </span>
+    </section>
+    {% endif %}
+    {% for section in resume.sections %}
+    <section>
+        <h2>{{ section.name }}</h2>
+        <table class="event-table">
+            {% for experience in resume[section.key] %}
+            <tr>
+                <td>
+                    <div class="org">{{ experience.org }}
+                        {% if experience.team %}(<em>{{ experience.team }}</em>){% endif %}&nbsp;<span
+                            class="when">{{ experience.when }}</span></div>
+                    <div class="position">{{ experience.role }}</div>
+                    <div style="clear: both; text-align: left">
+                        <span>
+                            {{ experience.description | smartify | markdownify |
+                            remove: '<p>' | remove: '</p>' }}
+                        </span>
 
-                            <div style="float: right; margin: 4px;">
-                                {% for keyword in experience.keywords %}
-                                <span class="tag">{{ keyword }}</span>
-                                {% endfor %}
-                            </div>
+                        <div style="float: right; margin: 4px;">
+                            {% for keyword in experience.keywords %}
+                            <span class="tag">{{ keyword }}</span>
+                            {% endfor %}
                         </div>
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
-            <div style="text-align: center; font-size: smaller; font-style: italic;">{{ section.postscript }}</div>
-        </section>
-        {% endfor %}
-        <footer>
-            <!-- Rendered on {{ site.time | date_to_string }}. Up-to-date version:  -->
-            <a href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a>
-        </footer>
-    </body>
-    <script>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <!-- <div style="text-align: center; font-size: smaller; font-style: italic;">{{ section.postscript }}</div> -->
+    </section>
+    {% endfor %}
+    <footer>
+        <!-- Rendered on {{ site.time | date_to_string }}. Up-to-date version: -->
+        <!-- <a href="http://www.aviraldg.com/resume?pdf=true">aviraldg.com/resume</a> -->
+    </footer>
+</body>
+<script>
     var redirectToPDF = (function (querystring) {
-        querystring = querystring.substring(querystring.indexOf('?')+1).split('&');
+        querystring = querystring.substring(querystring.indexOf('?') + 1).split('&');
         var params = {}, pair, d = decodeURIComponent;
         for (var i = querystring.length - 1; i >= 0; i--) {
             pair = querystring[i].split('=');
@@ -271,5 +319,6 @@ skills_enabled: false
     if (redirectToPDF) {
         window.location.pathname = '/files/aviral-dasgupta-resume.pdf';
     }
-    </script>
+</script>
+
 </html>
