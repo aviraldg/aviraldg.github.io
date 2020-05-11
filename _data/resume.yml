@@ -21,10 +21,6 @@ social_links:
   url: https://twitter.com/aviraldg
 meta:
   email: 'me@aviraldg.com'
-  phone:
-    # - '+447519573308'
-    - '+353833798306'
-    - '+917077100566'
 sections:
   - name: Recent Experience
     key: experiences
