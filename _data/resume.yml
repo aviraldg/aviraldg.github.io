@@ -1,4 +1,5 @@
-headline: 'Software Engineer &amp; Designer'
+headline: 'Software Development Engineer'
+location: Dublin, IE
 social_links:
 - icon: fa-globe
   name: Website
@@ -22,24 +23,38 @@ meta:
   email: 'me@aviraldg.com'
   phone:
     # - '+447519573308'
+    - '+353833798306'
     - '+917077100566'
 sections:
-  - name: Experience
+  - name: Recent Experience
     key: experiences
     postscript: >
       In addition to the mentioned experience, I have also been working on personal
       projects and freelancing since around 2008.
-  - name: 'Awards &amp; Achievements'
+  - name: 'Selected Awards &amp; Achievements'
     key: awards
   - name: Education
     key: education
 experiences:
-  - when: Jul 18 &mdash; now
-    org: '<a href="https://www.amazon.com">Amazon</a>'
-    team: Retail Business Systems - Auto Correction &amp; Enrichment
-    role: Software Development Engineer I
+  - when: Nov 19 &mdash; now
+    org: '<a href="https://about.google/">Google</a>'
+    team: AdsML SRE
+    role: Software Engineer II, Site Reliability Engineering
     description: >
-      I work on services that perform automated catalog content
+      I am responsible for the data extraction, storage and ML experimentation, training & serving platforms that
+      support ML teams across Google, both as a first responder for production incidents, and as a developer with
+      a reliability/scalability focus.
+    keywords:
+    - C++
+    - Go
+    - Python
+    - SRE
+  - when: Feb 18 &mdash; Sep 19
+    org: '<a href="https://www.amazon.com">Amazon</a>'
+    team: RBS - Auto Correction &amp; Enrichment
+    role: SDE I & SDE Intern
+    description: >
+      I worked on services that perform automated catalog content
       validation and correction before new items are displayed on *Amazon.com*.
 
       - Designed system to compute a quality score for corrections performed by
@@ -49,34 +64,17 @@ experiences:
       - Launched Enrichment and PACE solutions in Far East (AU, JP) region by
         leveraging Cloudformation and Live Pipeline Templates. Wrote missing integration
         tests to make these services' pipelines' full CD.
-    keywords:
-    - Java
-    - Spring
-    - Hibernate
-    - JUnit
-    - Mockito
-    - AWS
-  - when: Feb 18 &mdash; Jul 18
-    org: '<a href="https://www.amazon.com">Amazon</a>'
-    team: Retail Business Systems - Auto Correction &amp; Enrichment
-    role: Software Engineering Intern
-    description: >
-      During my internship, I worked on improvements and fixes for an onboarding solution for
-      services owned by my team.
-
       - Automated a lengthy and error-prone manual onboarding process, freeing up
         about one developer's worth of time per sprint for other issues.
       - Analysed legacy codebase to find and fix system-wide issues involving
         data races and consistency issues, leading to increased
         system stability and reliability.
-      - Set up and customised system for error detection and reporting by
-        replaying production traffic on shadow deployment.
     keywords:
+    - Ruby
+    - Python
     - Java
     - Spring
     - Hibernate
-    - JUnit
-    - Mockito
     - AWS
   - when: Sep 17 &mdash; Feb 18
     org: '<a href="https://www.bloomberg.com/company/">Bloomberg L. P.</a>'
@@ -95,28 +93,27 @@ experiences:
     - C++
     - Python
     - TypeScript
-    - GTest
-  - when: May 17 &mdash; Jul 17
-    org: '<a href="https://www.plivo.com/">Plivo (YC S12)</a>'
-    team: Developer Experience
-    role: Software Engineering Intern
-    description: >
-      Developed and tested the next version of <em>Plivo's</em> Node.js, Java,
-      Python and Go SDKs, as well as new tooling for automatic generation of
-      examples, documentation and code from predefined schema. Also worked on
-      framework and components for as yet unannounced visual developer tool.
+  # - when: May 17 &mdash; Jul 17
+  #   org: '<a href="https://www.plivo.com/">Plivo (YC S12)</a>'
+  #   team: Developer Experience
+  #   role: Software Engineering Intern
+  #   description: >
+  #     Developed and tested the next version of <em>Plivo's</em> Node.js, Java,
+  #     Python and Go SDKs, as well as new tooling for automatic generation of
+  #     examples, documentation and code from predefined schema. Also worked on
+  #     framework and components for Plivo's PHLO flow based visual development tool.
 
-      - Significantly improved developer productivity leading to a better
-        onboarding experience for clients
-      - Addressed longstanding customer complaints about existing SDKs
-    keywords:
-    - Java
-    - Python
-    - Node.js
-    - Go
-    - AWS
-    - Flask
-    - SQLAlchemy
+  #     - Significantly improved developer productivity leading to a better
+  #       onboarding experience for clients
+  #     - Addressed longstanding customer complaints about existing SDKs
+  #   keywords:
+  #   - Java
+  #   - Python
+  #   - Node.js
+  #   - Go
+  #   - AWS
+  #   - Flask
+  #   - SQLAlchemy
   - when: Mar 16 &mdash; Aug 16
     org: 'Google Summer of Code &middot; <a href="http://matrix.org/">Matrix.org</a>'
     role: Student Developer
@@ -167,16 +164,16 @@ awards:
     description: >
       Won prizes for *Pushtime*, a Chrome extension and Android app I wrote to sync clipboards,
       phone health, OTPs, and more securely over the Matrix protocol.
-  - when: 2016, 2017
-    org: 'Mindfire Debasish Das Memorial IT Quiz'
-    role: Winner
-    description: >
-      Placed 1<sup>st</sup> and 2<sup>nd</sup> respectively in this tech quiz organized by <em>Mindfire Solutions</em>.
-  - when: 2016
-    org: 'HackerEarth Indiahacks - Online Commerce Track'
-    role: National Finalist
-    description: >
-      Developed and pitched IVR backed automated delivery tracking solution, <em>TrackShack</em>.
+  # - when: 2016, 2017
+  #   org: 'Mindfire Debasish Das Memorial IT Quiz'
+  #   role: Winner
+  #   description: >
+  #     Placed 1<sup>st</sup> and 2<sup>nd</sup> respectively in this tech quiz organized by <em>Mindfire Solutions</em>.
+  # - when: 2016
+  #   org: 'HackerEarth Indiahacks - Online Commerce Track'
+  #   role: National Finalist
+  #   description: >
+  #     Developed and pitched IVR backed automated delivery tracking solution, <em>TrackShack</em>.
   - when: 2015
     org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
     role: Grand Prize Winner
@@ -195,12 +192,12 @@ awards:
     description: >
       Awarded grand prize twice by <em>Google</em> for open
       source work with ​<em>Sahana Software Foundation</em> (Sahana Eden - Disaster Management Platform) and ​<em>Tux4Kids</em> (TuxMath - Educational Game).
-  - when: '2011 &amp; 2012'
-    org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
-    role: World Finalist
-    description: >
-      Placed 2<sup>nd</sup> and 3<sup>rd</sup> respectively in the international finals of this technology
-      quiz contest organized by <em>Tata Consultancy Services</em>.
+  # - when: '2011 &amp; 2012'
+  #   org: '<a href="https://www.youtube.com/watch?v=lgcTJnpZBio">TCS IT Wiz</a>'
+  #   role: World Finalist
+  #   description: >
+  #     Placed 2<sup>nd</sup> and 3<sup>rd</sup> respectively in the international finals of this technology
+  #     quiz contest organized by <em>Tata Consultancy Services</em>.
 education:
   - when: '2014 &mdash; 2018'
     org: '<a href="http://kiit.ac.in/">KIIT University, Bhubaneswar (8.4/10)</a>'
@@ -219,7 +216,7 @@ skills:
      - C
      - HTML
      - CSS
-    #  - Go
+     - Go
  - label: 'Platforms & Frameworks'
    list:
      - Android
@@ -227,14 +224,12 @@ skills:
      - Django
      - React
      - AngularJS
- - label: Database Technologies
+ - label: Database/Storage Technologies
    list:
      - SQL
-    #  - MongoDB
      - Redis
  - label: Other Tools
    list:
      - Git
      - Mercurial
      - Subversion
-    #  - Docker
