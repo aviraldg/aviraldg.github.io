@@ -32,14 +32,31 @@ sections:
   - name: Education
     key: education
 experiences:
-  - when: Nov 19 &mdash; now
+  - when: April 21 &mdash; now
+    org: '<a href="https://about.google/">Google</a>'
+    team: AdsML SRE
+    role: Software Engineer III, Site Reliability Engineering
+  - when: Nov 19 &mdash; April 21
     org: '<a href="https://about.google/">Google</a>'
     team: AdsML SRE
     role: Software Engineer II, Site Reliability Engineering
     description: >
-      I am responsible for the data extraction, storage and ML experimentation, training & serving platforms that
-      support ML teams across Google, both as a first responder for production incidents, and as a developer with
-      a reliability/scalability focus.
+      I am responsible for the data extraction, storage and ML experimentation,
+      training & serving platforms that support ML teams across Google, both as
+      a first responder for production incidents, and as a developer with a
+      reliability/scalability focus.
+
+      - Designed and implemented automation to reallocate ML hardware
+        accelerators (TPUs) when blocked on feature extraction (saving between
+        27~36 SWE/yr)  
+      - Designed and implemented infrastructure to allow ML models to block on
+        input data completeness (protecting against failure modes that have cost
+        $xM in the past)
+      - Completed and productionized service that batches
+        together configuration changes to avoid overloading storage backend
+        (unblocked processes essential for revenue critial model
+        experimentation.)
+      - Conducted production readiness review for new transfer learning system.
     keywords:
     - C++
     - Go
@@ -53,15 +70,16 @@ experiences:
       I worked on services that perform automated catalog content
       validation and correction before new items are displayed on *Amazon.com*.
 
-      - Designed system to compute a quality score for corrections performed by
-        our services by sampling a subset of requests.
-      - Built self service capability into Enrichment solution, thus allowing
-        customers to onboard marketplaces faster, and with less developer involvement.
-      - Launched Enrichment and PACE solutions in Far East (AU, JP) region by
-        leveraging Cloudformation and Live Pipeline Templates. Wrote missing integration
-        tests to make these services' pipelines' full CD.
+      - Designed system to compute quality score for corrections performed by
+        our services by sampling requests.
+      - Built self service capability into Enrichment solution, to allow
+        customers to onboard faster, and with less developer involvement.
+      - Migrated legacy systems to Cloudformation and Live Pipeline Templates
+        (Infrastructure as Code) to enable rapid expansion to new marketplaces.
+        Wrote missing integration tests to make these services' pipelines' full 
+        CD.
       - Automated a lengthy and error-prone manual onboarding process, freeing up
-        about one developer's worth of time per sprint for other issues.
+        1 SDE/yr.
       - Analysed legacy codebase to find and fix system-wide issues involving
         data races and consistency issues, leading to increased
         system stability and reliability.
@@ -77,9 +95,10 @@ experiences:
     team: Collaboration - Notes
     role: Software Engineering Intern
     description: >
-      Designed and built a scalable service for publishing real-time note metadata to some of the
-      most popular functions on the *Bloomberg Terminal*. Also developed
-      a reusable UI component allowing other functions to display this data.
+      Designed and built a service for publishing real-time NOTE metadata to 
+      some of the most popular functions on the *Bloomberg Terminal*. Also
+      developed a reusable UI component allowing other functions to display this
+      data.
 
       - Improved key workflows of *Notes* clients, leading to increased user
         productivity.
@@ -117,11 +136,6 @@ experiences:
       Worked on enhancements for the *Riot* IM client, including a new rich
       text editor based on Draft.js, a flexible and extensible autocomplete
       system, as well as a Slack Webhook API compatible Application Service.
-
-      - Enabled several productivity usecases through the Slack Webhook
-        compatible AS, like Prometheus and Gitlab integrations.
-      - Usability enhancements for an improved user experience, and higher user
-        retention.
     keywords:
     - React
     - JavaScript (ES6)
@@ -170,15 +184,15 @@ awards:
   #   role: National Finalist
   #   description: >
   #     Developed and pitched IVR backed automated delivery tracking solution, <em>TrackShack</em>.
-  - when: 2015
-    org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
-    role: Grand Prize Winner
-    description: >
-      Invited to exclusive ​<em>Hackcelerator</em> programme and <em>Angelhack's</em>
-      Global Demo Day in San Francisco, for Android testing, user feedback and deployment tools startup, <em>Codeorb</em>.
+  # - when: 2015
+  #   org: '<a href="http://angelhack.com/2015/10/26/hackcelerator-on-air-meet-codeorb-infiniteloops/">Angelhack Vizag</a>'
+  #   role: Grand Prize Winner
+  #   description: >
+  #     Invited to exclusive ​<em>Hackcelerator</em> programme and <em>Angelhack's</em>
+  #     Global Demo Day in San Francisco, for Android testing, user feedback and deployment tools startup, <em>Codeorb</em>.
   - when: 2013
     org: '<a href="https://security.googleblog.com/2013/05/the-results-are-in-hardcode-secure.html">Syscan Hardcode Secure Coding Contest</a>'
-    role: '2<sup>nd</sup> at Singapore World Finals'
+    role: '2<sup>nd</sup> at World Finals'
     description: >
       Designed & developed ​*Gridlock Exchange*, a security-focused e-commerce platform, and
       performed successful penetration tests on competitors' apps.
