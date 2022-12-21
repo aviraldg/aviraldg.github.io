@@ -7,6 +7,7 @@ twitter_username: aviraldg
 github_username:  aviraldg
 linkedin_username: aviraldg
 facebook_username: aviraldg
+mastodon_username: mas.to/@aviraldg
 hn_username: aviraldg
 permalink: /p/:title/
 twitter:
@@ -20,6 +21,7 @@ social:
     - https://github.com/aviraldg
     - https://keybase.io/aviraldg
     - https://stackoverflow.com/users/152873/aviraldg
+    - https://mas.to/@aviraldg
 lang: en_IN
 
 # Build settings
