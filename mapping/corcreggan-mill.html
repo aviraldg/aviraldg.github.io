@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <script src="aframe.min.js"></script>
+  <style>
+    .title {
+      z-index: 1000;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      font-family: 'Playfair Display', serif;
+      padding: 32px;
+      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+      user-select: none;
+      color: white;
+    }
+  
+    .title a {
+      text-decoration: none;
+    }
+  
+    .title h1 {
+      margin: 0;
+      font-weight: normal;
+    }
+  
+    .title h4 {
+      margin: 0;
+      font-weight: normal;
+      font-style: italic;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a-scene background="color: #222" renderer="gammaOutput: true" inspector="" keyboard-shortcuts="" screenshot=""
+    vr-mode-ui="" device-orientation-permission-ui="">
+    <a-assets>
+      <a-asset-item id="map" src="/files/mapping/corcreggan-mill.glb"></a-asset-item>
+    </a-assets><a-entity gltf-model="#map" rotation="-90.09 0.65 -90"
+      position="-95.34976 83.867 -69.597"></a-entity>
+    <a-entity camera="" wasd-controls="fly: true" position="-104 11.772 -25.136" rotation="-88.006 8.136 0"
+      look-controls="" data-aframe-inspector-original-camera=""></a-entity>
+
+  </a-scene>
+  <a href="https://www.corcreggan.com/">
+    <div class="title">
+      <h1>Corcreggan Mill</h1>
+      <h4>Donegal, Ireland</h4>
+    </div>
+  </a>
+</body>
+
+</html>
